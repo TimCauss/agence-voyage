@@ -47,8 +47,12 @@ nav svg {
     gap: 10px;
 }
 
-.faucon-mil {
-    margin: -300px;
+.hero {
+    display: flex;
+    flex-flow: row, wrap;
+    width: 100%;
+    max-height: 80vh;
+    min-height: 500px;
 }
 
 .hero h1,
@@ -59,14 +63,8 @@ nav svg {
 }
 
 .hero h1 {
-    padding: 15px;
-    max-width: 273px;
-    position: absolute;
-    top: 150px;
-}
-
-.hero h1 {
     text-align: left;
+    padding: 7px;
     max-width: 275px;
     position: absolute;
     top: 150px;
@@ -79,23 +77,34 @@ nav svg {
 .hero h2 {
     text-align: right;
     font-style: normal;
+    position: absolute;
     font-weight: 700;
     font-size: 15px;
     line-height: 20px;
     max-width: 275px;
+    top: 350px;
+    right: 0px;
+    padding: 7px;
+}
+
+
+figure {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .carousel-container {
-    display: flex;
-    justify-content: center;
+    width: inherit;
 }
 
 .slide-container img {
     overflow: hidden;
-    width: 100%;
-    min-height: 500px;
     object-fit: cover;
     transition: 200ms;
+    width: 100%;
+    max-height: 80vh;
+    min-height: 500px;
 }
 
 .scroll {
