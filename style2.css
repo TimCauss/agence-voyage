@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteneur-slider{
+    display: flex;
+    width: 347px;
+    height: 196px;
+    margin: 9%;
+    animation: slider 10s infinite;
+    position: relative;
+}
+.slider{
+    margin: 9%;
+    overflow: hidden;
+    width: 347px;
+    height: 196px;
+
+}
+.conteneur-slider img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@keyframes slider:nth-child:img(1) {
+    0%{
+        transform: translateX(0%);
+    }
+    33%{
+
+        transform: translateX(110%);
+    }
+    66%{
+        transform: translateX(20%);
+    }
+    100%{
+        transform: translateX(-20%);
+    }   
+}
