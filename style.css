@@ -31,7 +31,7 @@ svg {
     fill: white;
 }
 
-nav img {
+nav svg {
     width: 20px;
     padding: 20px;
 }
@@ -82,6 +82,7 @@ nav img {
     font-weight: 700;
     font-size: 15px;
     line-height: 20px;
+    max-width: 275px;
 }
 
 .carousel-container {
