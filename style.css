@@ -202,6 +202,11 @@ nav svg {
             margin-top: 150px;
             padding-left: 8%;
         }
+        @media (max-width: 375px){
+            .conteneur-faucon{
+                display: none;
+            }
+        }
         
 
 
@@ -210,17 +215,17 @@ nav svg {
     .recherche {
         display: flex;
         flex-wrap: wrap;
-        padding-left: 8%;
+        
         margin-top: 50px;
         margin-bottom: 50px;
     }
     input {
         display: block;
-        margin-left: auto;
+        margin-left: 8%;
         margin-right: auto; 
     }
     .destination input{    
-        width: 315px;
+        width: 320px;
         height: 30px;
         border-radius: 5px; 
         border-style: none; 
@@ -229,15 +234,9 @@ nav svg {
         background-repeat:no-repeat;
         background-size: 50px;  
         }
-@media screen and(max-width: 1024px){
-    .destination input{
-    
-    margin-left: 300px;
-    
-}
-}
+
     .date input{    
-        width: 315px;
+        width: 320px;
         height: 30px;
         margin-top: 5px;
         border-radius: 5px; 
@@ -247,7 +246,7 @@ nav svg {
     
     .sejour input{ 
         margin-top: 5px;   
-        width: 315px;
+        width: 320px;
         height: 30px;
         border-radius: 5px; 
         border-style: none;  
@@ -267,6 +266,7 @@ nav svg {
             margin-top: 20px;
             margin-left: auto;
             margin-right: auto;
+            
         }
 
 
