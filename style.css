@@ -12,6 +12,9 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+
+
+/*! HEADER STYLE START */
 header {
     display: flex;
     position: fixed;
@@ -55,13 +58,17 @@ nav svg {
     fill: black;
 }
 
+/*! HEADER STYLE END */
 
+main {
+    display: block;
+}
+
+
+/*! HERO STYLE START */
 .hero {
-    display: flex;
-    flex-flow: row, wrap;
     width: 100%;
-    max-height: 80vh;
-    min-height: 500px;
+    height: 80vh;
 }
 
 .hero h1,
@@ -96,19 +103,11 @@ nav svg {
     padding: 7px;
 }
 
-
-figure {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    transition: opacity 0.5s;
-}
-
 .img-slider-hero {
     opacity: 0;
-    transition: 0,5s;
+    transition: 0, 5s;
 }
+
 .active-hero {
     opacity: 1;
 }
@@ -117,7 +116,6 @@ figure {
     width: inherit;
     position: relative;
     width: 100%;
-    max-height: 80vh;
     display: flex;
 }
 
@@ -125,17 +123,73 @@ figure {
     object-fit: cover;
     transition: 200ms;
     width: 100%;
-    max-height: 80vh;
     min-height: 500px;
-}
-main {
-    display: flex;
-    flex-direction: column;
-    gap: 2000px;
 }
 
 .slide {
-    z-index: 1;
-    min-height: 500px;
-    max-height: 80vh;
+    width: 100%;
+    position: absolute;
+    transition: opacity 0.5s;
+
 }
+
+/*! HERO STYLE END */
+
+/*! SECTION CARD STYLE START */
+.section-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.conteneur-card {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    width: 346px;
+    height: 325px;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+.conteneur-card h3,
+.desc,
+.type {
+    padding: 2%;
+}
+
+.prix {
+    font-family: 'Open Sans';
+    display: flex;
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+/*! SECTION CARD STYLE END */
+
+
+/*! MEDIA QUERY START */
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 40vh;
+    }
+}
+
+#background-video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    }
