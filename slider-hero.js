@@ -1,7 +1,6 @@
 //On récupère les figures du slider
 let img_slider_hero = document.getElementsByClassName('img-slider-hero');
 
-console.log(img_slider_hero);
 //on déclare une variable pour les étapes du slider
 let etape = 0;
 //on déclare une variable pour le nombre d'images du slider
