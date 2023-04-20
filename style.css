@@ -1,3 +1,20 @@
+body{
+    padding-left: 8%;
+    padding-right: 8%;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    height: 60px;
+    background-color : hsla(0,0%,27%,0.1);
+}
+header h3{
+    color:  darkorange;
+    margin-left: 1vw;
+}
+
+
 #background-video {
     height: 100vh;
     width: 100vw;
@@ -10,8 +27,7 @@
     z-index: -1;
     }
 
-    h1, h2, #btnVideo{
-
+    #btnVideo{
         color: white;
         
         font-family: Trebuchet MS;
@@ -20,14 +36,10 @@
         
         text-align: center;
         
-        }
         
-        h1 {
-        font-size: 6rem;
-        margin-top: 30vh;
         }
-        
-        h2 { font-size: 3rem; }
+
+   
         
         #btnVideo{
         font-size: 1.5rem;
@@ -36,3 +48,169 @@
         margin-left: 50%;
         transform: translateX(-50%);
         }
+
+       
+        .titre{
+            padding-bottom: 10%;
+            background-image: image();
+            overflow: hidden;
+            font-family: sans-serif;
+            margin: 0% 0 0 0;
+            margin-top: 0;
+            margin-left: 50px;
+            margin-right: 50px;
+            position: relative;
+        }
+        @media (max-width:375px){
+            .titre{
+                margin-bottom: 10%;
+                margin-top: 10%;
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+      
+        .wrapper{
+            display: flex;
+            height: 35%;
+            width: 80%;
+            margin: 0 auto;
+            perspective: 150px;
+        }
+        
+        @media (max-width:375px){
+            .wrapper{
+                height: 15%;
+                width: 40%;
+            }
+        }
+        @media (max-width:975px){
+            .wrapper{
+                height: 25%;
+                width: 60%;
+            }
+        }
+        .scroll-text{
+            color: rgb(255, 217, 0);
+            font-size: 3vw;
+            line-height: 1.5em;
+            font-weight: bold;
+            text-align: justify;
+            position: relative;
+            animation: scroll 50s linear infinite forwards;
+            
+        }
+        @media (max-width:375px){
+            .scroll-text{
+                font-size: 5vw;
+                animation: scroll 80s linear infinite forwards;
+            }
+        }
+        
+
+        
+        .scroll-text h1, h2, h3{
+            text-align: center;
+        }
+        
+        @keyframes scroll {
+            from { top: 100%; transform: translateZ(0) rotateX(25deg)}
+            to  { top: -3000px; transform: translateZ(-1500px) rotateX(26deg)}
+        }
+
+
+
+
+        /*animation faucon */
+        .faucon:hover{
+            
+            animation: faucon 2s ease-out infinite;
+        
+        }
+        @keyframes faucon {
+            0% {
+                opacity: 0;
+                transform: scale(1.5) translateY(-0.75em) translateX(-0.75em);
+              }
+              20% {
+                opacity: 1;
+              }
+              89% {
+                opacity: 1;
+                transform: scale(1);
+              }
+              100% {
+                opacity: 0;
+                transform: translateZ(-1000em) translateY(-200em);
+              }
+            }
+        .conteneur-faucon{
+            display: flex;
+            perspective: 800px;
+            transform-style: preserve3d;
+            margin-top: 150px;
+            
+        }
+        
+    .recherche {
+        display: flex;
+        flex-wrap: wrap;
+        
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    input {
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .destination input{    
+        width: 315px;
+        height: 30px;
+        border-radius: 5px; 
+        border-style: none; 
+        background-image:url(image/-recherche-icône-vecteur-loupe.jpg);
+        background-position:right;
+        background-repeat:no-repeat;
+        background-size: 50px;  
+        }
+@media screen and(max-width: 1024px){
+    .destination input{
+    
+    margin-left: 300px;
+    
+}
+}
+    .date input{    
+        width: 315px;
+        height: 30px;
+        margin-top: 5px;
+        border-radius: 5px; 
+        border-style: none;  
+                   
+        }
+    
+    .sejour input{ 
+        margin-top: 5px;   
+        width: 315px;
+        height: 30px;
+        border-radius: 5px; 
+        border-style: none;  
+                    
+        }
+
+        button{
+            font-size: 18px;
+            color: white;
+            background-color: darkorange;
+            height: 40px;
+            width: 200px;
+            cursor: pointer;
+            border-style: none;
+            border-radius: 20px;
+            display: block;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
