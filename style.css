@@ -73,15 +73,15 @@ main {
 
 .hero h1,
 .hero h2 {
-    background-color: hsla(0, 0%, 47%, 0.3);
+    background-color: hsla(0, 0%, 28%, 0.3);
     backdrop-filter: blur(3.5px);
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .hero h1 {
     text-align: left;
     padding: 7px;
-    max-width: 275px;
+    max-width: 250px;
     position: absolute;
     top: 150px;
     font-style: normal;
@@ -116,7 +116,6 @@ main {
     width: inherit;
     position: relative;
     width: 100%;
-    display: flex;
 }
 
 .carousel-container img {
@@ -124,23 +123,25 @@ main {
     transition: 200ms;
     width: 100%;
     min-height: 500px;
+    max-height: 75vh;
 }
 
 .slide {
     width: 100%;
     position: absolute;
     transition: opacity 0.5s;
-
 }
 
 /*! HERO STYLE END */
+main {
+    background-color: hsla(0, 0%, 100%, 0.443);
+}
 
 /*! SECTION CARD STYLE START */
 .section-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
 }
 
 .conteneur-card {
@@ -155,6 +156,19 @@ main {
     margin: 50px;
     border-radius: 15px 15px 0 0;
     position: relative;
+    transition: 200ms;
+}
+
+.conteneur-card figure {
+    overflow: hidden;
+}
+
+.conteneur-card img {
+    transition: 200ms;
+}
+
+.conteneur-card img:hover {
+    scale: 1.2;
 }
 
 .conteneur-card h3,
@@ -176,11 +190,72 @@ main {
 
 
 /*! MEDIA QUERY START */
-@media screen and (max-width: 768px) {
-    .hero {
-        height: 40vh;
+/**MEDIA QUERY iPhone12 390x844 */
+@media screen and (min-width: 390px) {
+    .carousel-container img {
+        min-height: 650px;
+        max-height: 75vh;
+    }
+
+    .hero h2 {
+        top: 500px;
     }
 }
+
+/**MEDIA QUERY iPad 768*1024 */
+@media screen and (min-width: 768px) {
+    .carousel-container img {
+        min-height: 780px;
+        max-height: 75vh;
+    }
+    .hero h1 {
+        padding: 20px;
+        max-width: 400px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .hero h2 {
+        font-size: 30px;
+        line-height: 1em;
+        max-width: 500px;
+        top: 550px;
+        right: 0px;
+        padding: 20px;
+    }
+    .conteneur-card img:hover {
+        scale: 1;
+    }
+
+    .conteneur-card:hover {
+        scale: 1.2;
+    }
+}
+
+    /**MEDIA QUERY Macbook Pro 1440*900 */
+    @media screen and (min-width: 1440px) {
+        .carousel-container img {
+            min-height: 500px;
+            max-height: 75vh;
+        }
+        .hero h1 {
+            padding: 20px;
+            max-width: 600px;
+            font-size: 50px;
+            line-height: 1em;
+            left: 100px;
+        }
+        .hero h2 {
+            font-size: 35px;
+            line-height: 1em;
+            max-width: 600px;
+            top: 450px;
+            right: 100px;
+            padding: 20px;
+        
+    }
+}
+
+
 
 #background-video {
     height: 100%;
@@ -192,4 +267,4 @@ main {
     top: 0;
     bottom: 0;
     z-index: -1;
-    }
+}
