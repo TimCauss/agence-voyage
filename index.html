@@ -1,14 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html lang="FR">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/ico" href="image/Group.svg">
+    <title>Wookiee Adventure</title>
+
 </head>
-
 <body>
-</body>
+    <div>
+        <embed src="musique/Star Wars.mp3" loop="true" autostart="true" width="2" height="0">
+    </div>
+    <header>
+        <img src="image/Group.svg" alt="">
+        <h3>WOOKIEE ADVENTURE</h3>
+    </header>
+    <video id="background-video" autoplay loop muted>
 
+        <source src="video/nebuleuse-rouge-31420.mp4" type="video/mp4">
+        
+    </video>
+        <button id="btnVideo" onclick="playAndPause()"></button>
+         
+        <section class="titre">
+            <div class="wrapper">
+                <div class="scroll-text">
+                    <h1>WOOKIEE ADVENTURE</h1>
+                    <p>Voyagez dans une galaxie lointaine avec notre agence de voyage Wookiee Adventure! Embarquez pour une aventure épique à bord de notre vaisseau spatial et découvrez des destinations exotiques comme la planète Tatooine, la mystérieuse Dagobah ou la légendaire Endor. Rencontrez des créatures extraterrestres fascinantes, explorez des paysages interstellaires à couper le souffle et revivez les moments mythiques de cette saga légendaire. Que la Force soit avec vous alors que vous embarquez pour une expérience de voyage inoubliable dans l'univers Star Wars !</p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="conteneur-faucon">
+            <img class="faucon" src="image/pngaaa.com-376043.png" alt="" height="100px">
+        </div>
+        <section class="recherche">
+
+            <div class="destination"> 
+                <input type="text" id="" placeholder="Destination (planète, ville...)" >
+            </div>
+            
+            <div class="date">  
+                <input type="text" id="" placeholder="19/04/2023">
+            </div>
+            
+        
+            <div class="sejour">
+                <input type="text" id=""  placeholder="type de séjours">
+            </div>
+                
+                <button>Rechercher</button>
+                
+            
+        </section>
+
+       
+
+        
+           
+        
+        
+        </div>
+</body>
 </html>
