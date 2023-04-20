@@ -211,47 +211,40 @@ nav svg {
 
 
 
- /***** formulaire *****/       
-    .recherche {
+ /***** formulaire *****/    
+ 
+    
+    .conteneur-input {
         display: flex;
         flex-wrap: wrap;
-        
+        justify-content: center;
+        gap:20px;        
         margin-top: 50px;
         margin-bottom: 50px;
     }
+
     input {
-        display: block;
-        margin-left: 8%;
-        margin-right: auto; 
-    }
-    .destination input{    
         width: 320px;
         height: 30px;
         border-radius: 5px; 
-        border-style: none; 
+        border-style: none;
+        margin-top: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        text-align: center;
+    }
+
+   
+        
+    
+    .destination input{ 
         background-image:url(image/-recherche-icône-vecteur-loupe.jpg);
         background-position:right;
         background-repeat:no-repeat;
-        background-size: 50px;  
-        }
-
-    .date input{    
-        width: 320px;
-        height: 30px;
-        margin-top: 5px;
-        border-radius: 5px; 
-        border-style: none;  
-                   
+        background-size: 50px; 
+        
         }
     
-    .sejour input{ 
-        margin-top: 5px;   
-        width: 320px;
-        height: 30px;
-        border-radius: 5px; 
-        border-style: none;  
-                    
-        }
 
         button{
             font-size: 18px;
@@ -276,6 +269,7 @@ nav svg {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 100px;
 
 }
 .conteneur-card{
