@@ -15,6 +15,9 @@ header h3{
 }
 
 
+
+
+/***** video background *****/
 #background-video {
     height: 100vh;
     width: 100vw;
@@ -50,6 +53,10 @@ header h3{
         }
 
        
+
+
+
+ /***** effet scroll star wars *****/       
         .titre{
             padding-bottom: 10%;
             background-image: image();
@@ -152,6 +159,10 @@ header h3{
             
         }
         
+
+
+
+ /***** formulaire *****/       
     .recherche {
         display: flex;
         flex-wrap: wrap;
