@@ -33,7 +33,7 @@ svg {
 
 nav svg {
     width: 20px;
-    padding: 20px;
+    margin-right: 20px;
 }
 
 .mini-search {
@@ -46,6 +46,15 @@ nav svg {
     justify-content: center;
     gap: 10px;
 }
+
+.scroll {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.logo-scroll {
+    fill: black;
+}
+
 
 .hero {
     display: flex;
@@ -93,43 +102,40 @@ figure {
     margin: 0;
     padding: 0;
     position: absolute;
+    transition: opacity 0.5s;
+}
+
+.img-slider-hero {
+    opacity: 0;
+    transition: 0,5s;
+}
+.active-hero {
+    opacity: 1;
 }
 
 .carousel-container {
     width: inherit;
     position: relative;
-}
-
-.slide-container {
-    display: flex;
-    position: relative;
     width: 100%;
     max-height: 80vh;
+    display: flex;
 }
 
-.slide-container img {
-    overflow: hidden;
+.carousel-container img {
     object-fit: cover;
     transition: 200ms;
     width: 100%;
     max-height: 80vh;
     min-height: 500px;
 }
-
-.scroll {
-    background-color: hsl(0, 0%, 100%);
-}
-
-.logo-scroll {
-    fill: black;
-}
-
 main {
     display: flex;
     flex-direction: column;
     gap: 2000px;
 }
 
-.slide2 {
-    z-index: -1;
+.slide {
+    z-index: 1;
+    min-height: 500px;
+    max-height: 80vh;
 }
