@@ -8,32 +8,36 @@
   position: relative;
   height: 100%;
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   will-change: transform;
   cursor: all-scroll;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
+
 .slider.animation {
   -webkit-transition: -webkit-transform 750ms ease-in-out;
   transition: -webkit-transform 750ms ease-in-out;
   transition: transform 750ms ease-in-out;
   transition: transform 750ms ease-in-out, -webkit-transform 750ms ease-in-out;
 }
+
 .slider.animation .slide__darkbg {
   -webkit-transition: -webkit-transform 750ms ease-in-out;
   transition: -webkit-transform 750ms ease-in-out;
   transition: transform 750ms ease-in-out;
   transition: transform 750ms ease-in-out, -webkit-transform 750ms ease-in-out;
 }
+
 .slider.animation .slide__text {
   -webkit-transition: -webkit-transform 750ms ease-in-out;
   transition: -webkit-transform 750ms ease-in-out;
   transition: transform 750ms ease-in-out;
   transition: transform 750ms ease-in-out, -webkit-transform 750ms ease-in-out;
 }
+
 .slider.animation .slide__letter {
   -webkit-transition: -webkit-transform 750ms ease-in-out;
   transition: -webkit-transform 750ms ease-in-out;
@@ -48,21 +52,27 @@
   height: 100%;
   overflow: hidden;
 }
+
 .slide--1 {
   left: 0%;
 }
+
 .slide--2 {
   left: 100%;
 }
+
 .slide--3 {
   left: 200%;
 }
+
 .slide--4 {
   left: 300%;
 }
+
 .slide--5 {
   left: 400%;
 }
+
 .slide__darkbg {
   position: absolute;
   width: 100%;
@@ -70,42 +80,44 @@
   top: 0;
   left: 0;
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   will-change: transform;
   z-index: 10;
 }
+
 .slide__text-wrapper {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   z-index: 15;
 }
+
 .slide__letter {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   -webkit-text-fill-color: transparent !important;
   -webkit-background-clip: text !important;
   font-size: 30vw;
@@ -114,39 +126,44 @@
   z-index: 2;
   will-change: transform;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
+
 .slide__text {
   font-size: 8vw;
   font-weight: 800;
   text-transform: uppercase;
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   letter-spacing: 12px;
-  color: #fff;
+  color: #ffffff;
   will-change: transform;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
+
 .slide__text:nth-child(odd) {
   z-index: 2;
 }
+
 .slide__text:nth-child(even) {
-  z-index: 2;
+  z-index: 15;
 }
+
 .slide--1__darkbg {
   left: 0%;
   background: url("/images/Hero-Landscape-FauconMil-L.png") center center no-repeat;
   background-size: cover;
   background-position: 0px center, 0px center;
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   will-change: transform;
 }
+
 .slide--1__darkbg:after {
   content: '';
   position: absolute;
@@ -156,20 +173,23 @@
   height: 100%;
   background-color: rgba(11, 15, 39, 0.83);
 }
+
 .slide--1__letter {
   background: url("/images/Hero-Landscape-FauconMil-L.png") center center no-repeat;
   background-position: 0px center, 0px center;
   background-size: cover;
 }
+
 .slide--2__darkbg {
   left: -50%;
   background: url("/images/Hero-Landscape-tatooine-L.png") center center no-repeat;
   background-size: cover;
   background-position: 0px center, 0px center;
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   will-change: transform;
 }
+
 .slide--2__darkbg:after {
   content: '';
   position: absolute;
@@ -179,20 +199,23 @@
   height: 100%;
   background-color: rgba(11, 15, 39, 0.83);
 }
+
 .slide--2__letter {
   background: url("/images/Hero-Landscape-tatooine-L.png") center center no-repeat;
   background-position: 0px center, 0px center;
   background-size: cover;
 }
+
 .slide--3__darkbg {
   left: -100%;
   background: url("/images/hero-landscape-naboo-L.jpg") center center no-repeat;
   background-size: cover;
   background-position: 0px center, 0px center;
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   will-change: transform;
 }
+
 .slide--3__darkbg:after {
   content: '';
   position: absolute;
@@ -202,20 +225,23 @@
   height: 100%;
   background-color: rgba(11, 15, 39, 0.83);
 }
+
 .slide--3__letter {
   background: url("/images/hero-landscape-naboo-L.jpg") center center no-repeat;
   background-position: 0px center, 0px center;
   background-size: cover;
 }
+
 .slide--4__darkbg {
   left: -150%;
   background: url("/images/Hero-Landscape-Kashyyyk-L-2.jpg") center center no-repeat;
   background-size: cover;
   background-position: 0px center, 0px center;
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   will-change: transform;
 }
+
 .slide--4__darkbg:after {
   content: '';
   position: absolute;
@@ -225,20 +251,23 @@
   height: 100%;
   background-color: rgba(11, 15, 39, 0.83);
 }
+
 .slide--4__letter {
   background: url("/images/Hero-Landscape-Kashyyyk-L-2.jpg") center center no-repeat;
   background-position: 0px center, 0px center;
   background-size: cover;
 }
+
 .slide--5__darkbg {
   left: -200%;
   background: url("/images/Landcsape-death-star.jpg") center center no-repeat;
   background-size: cover;
   background-position: 0px center, 0px center;
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   will-change: transform;
 }
+
 .slide--5__darkbg:after {
   content: '';
   position: absolute;
@@ -248,6 +277,7 @@
   height: 100%;
   background-color: rgba(11, 15, 39, 0.83);
 }
+
 .slide--5__letter {
   background: url("/images/Landcsape-death-star.jpg") center center no-repeat;
   background-position: 0px center, 0px center;
@@ -259,10 +289,11 @@
   bottom: 25px;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   list-style-type: none;
   z-index: 10;
 }
+
 .nav__slide {
   position: relative;
   display: inline-block;
@@ -273,24 +304,27 @@
   margin-left: 10px;
   cursor: pointer;
 }
+
 @media screen and (max-width: 400px) {
   .nav__slide {
     width: 22px;
     height: 22px;
   }
 }
+
 .nav__slide:hover:after {
   -webkit-transform: translate(-50%, -50%) scale(1, 1);
-          transform: translate(-50%, -50%) scale(1, 1);
+  transform: translate(-50%, -50%) scale(1, 1);
   opacity: 1;
 }
+
 .nav__slide:after {
   content: '';
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(0, 0);
-          transform: translate(-50%, -50%) scale(0, 0);
+  transform: translate(-50%, -50%) scale(0, 0);
   width: 75%;
   height: 75%;
   border-radius: 50%;
@@ -299,13 +333,14 @@
   -webkit-transition: 300ms;
   transition: 300ms;
 }
+
 .nav__slide--1 {
   margin-left: 0;
 }
 
 .nav-active:after {
   -webkit-transform: translate(-50%, -50%) scale(1, 1);
-          transform: translate(-50%, -50%) scale(1, 1);
+  transform: translate(-50%, -50%) scale(1, 1);
   opacity: 1;
 }
 
@@ -320,14 +355,17 @@
   -webkit-transition: 300ms;
   transition: 300ms;
 }
+
 .side-nav:hover {
   opacity: .1;
 }
+
 .side-nav--right {
   right: 0;
   background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #eed7ff 100%);
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #eed7ff 100%);
 }
+
 .side-nav--left {
   left: 0;
   background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 0) 0%, #eed7ff 100%);
@@ -339,7 +377,9 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;

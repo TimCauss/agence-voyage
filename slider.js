@@ -57,9 +57,7 @@ $(document).ready(function () {
     );
 
     for (var i = 0, length = arrCitiesDivided[city].length; i < length; i++) {
-      var text = $(
-        '<div class="slide__text slide__text--' +
-          (i + 1) +
+      var text = $('<div class="slide__text slide__text--' + (i + 1) +
           '">\n\t\t\t\t\t\t\t\t' +
           arrCitiesDivided[city][i] +
           "\n\t\t\t\t\t\t\t</div>"
@@ -230,4 +228,10 @@ $(document).ready(function () {
   }
 
   autoSlide();
+
+  function enableMouseWheel() {
+    $('body').css('overflow', 'auto');
+  }
+
+  enableMouseWheel();
 });

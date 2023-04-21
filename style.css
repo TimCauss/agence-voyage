@@ -34,6 +34,10 @@ svg {
     fill: white;
 }
 
+nav {
+    z-index: 100;
+}
+
 nav svg {
     width: 20px;
     margin-right: 20px;
@@ -208,12 +212,14 @@ main {
         min-height: 780px;
         max-height: 75vh;
     }
+
     .hero h1 {
         padding: 20px;
         max-width: 400px;
         font-size: 40px;
         line-height: 40px;
     }
+
     .hero h2 {
         font-size: 30px;
         line-height: 1em;
@@ -222,6 +228,7 @@ main {
         right: 0px;
         padding: 20px;
     }
+
     .conteneur-card img:hover {
         scale: 1;
     }
@@ -231,27 +238,29 @@ main {
     }
 }
 
-    /**MEDIA QUERY Macbook Pro 1440*900 */
-    @media screen and (min-width: 1440px) {
-        .carousel-container img {
-            min-height: 500px;
-            max-height: 75vh;
-        }
-        .hero h1 {
-            padding: 20px;
-            max-width: 600px;
-            font-size: 50px;
-            line-height: 1em;
-            left: 100px;
-        }
-        .hero h2 {
-            font-size: 35px;
-            line-height: 1em;
-            max-width: 600px;
-            top: 450px;
-            right: 100px;
-            padding: 20px;
-        
+/**MEDIA QUERY Macbook Pro 1440*900 */
+@media screen and (min-width: 1440px) {
+    .carousel-container img {
+        min-height: 500px;
+        max-height: 75vh;
+    }
+
+    .hero h1 {
+        padding: 20px;
+        max-width: 600px;
+        font-size: 50px;
+        line-height: 1em;
+        left: 100px;
+    }
+
+    .hero h2 {
+        font-size: 35px;
+        line-height: 1em;
+        max-width: 600px;
+        top: 450px;
+        right: 100px;
+        padding: 20px;
+
     }
 }
 
@@ -268,4 +277,3 @@ main {
     bottom: 0;
     z-index: -1;
 }
-
