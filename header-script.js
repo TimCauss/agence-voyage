@@ -20,7 +20,7 @@ window.addEventListener("scroll", () => {
     }
   } else {
     //sinon on l'enlève
-    if (menuActive == false & window.scrollY == 0) {
+    if ((menuActive == false) & (window.scrollY == 0)) {
       header.classList.remove("scroll");
       //on parcourt le tableau logo
       for (let item = 0; item < logo.length; item++) {
@@ -43,10 +43,12 @@ burger.addEventListener("click", () => {
   } else {
     nav2.style.top = "-500%";
     menuActive = false;
-    header.classList.remove("scroll");
-    for (let item = 0; item < logo.length; item++) {
-      //on enlève la classe logo-scroll aux éléments du tableau logo
-      logo[item].classList.remove("logo-scroll");
+    if ((window.scrollY == 0) & (menuActive === false)) {
+      header.classList.remove("scroll");
+      for (let item = 0; item < logo.length; item++) {
+        //on enlève la classe logo-scroll aux éléments du tableau logo
+        logo[item].classList.remove("logo-scroll");
+      }
     }
   }
 });
