@@ -24,7 +24,7 @@ $(document).ready(function () {
 
   arrCities.map(function (city) {
     var length = city.length;
-    var letters = Math.floor(length / 4);
+    var letters = Math.floor(length / 5);
     var exp = new RegExp(".{1," + letters + "}", "g");
 
     arrCitiesDivided.push(city.match(exp));
