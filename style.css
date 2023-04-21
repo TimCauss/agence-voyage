@@ -308,3 +308,45 @@ nav svg {
     right: 20px;
     bottom: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+/****** commentaire ******/
+
+.conteneur-commentaire{
+    padding-top: 15px;
+    border-style: groove;
+    width: 40%;
+    border-radius: 30px;
+    box-shadow: 5px 8px 5px black;
+}
+
+.scroller {
+    background: url(./images/la-galaxie-dans-laquelle-le-fluor-a-ete-detecte-se-trouve-a-12-milliards-d-annees-lumiere-image-d-illustration-pixabay-1636110175.jpg);
+    border-radius: 30px;
+    width: 100%;
+    height: 200px;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+  }
+
+.conteneur-commentaire img{
+    width: auto;
+    height: auto;
+    max-height: 150px;
+    max-width: 150px;
+    border-radius: 40%;
+}
+ p{
+    color: white;
+ }
+  
