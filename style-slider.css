@@ -180,6 +180,8 @@
   background-size: cover;
 }
 
+
+
 .slide--2__darkbg {
   left: -50%;
   background: url("/images/Hero-Landscape-tatooine-L.png") center center no-repeat;
@@ -291,7 +293,7 @@
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   list-style-type: none;
-  z-index: 10;
+  z-index: 2;
 }
 
 .nav__slide {
@@ -388,4 +390,27 @@ html {
 body {
   background-color: #000;
   overflow: hidden;
+}
+
+/** MEDIA QUERY +768px */
+@media screen and (max-width: 375px) {
+  .slide--1__darkbg {
+    background-position-x: 25%;
+  }
+
+  .slide--2__darkbg {
+    background-position-x: 75%;
+  }
+
+  .slide--3__darkbg {
+    background-position-x: 25%;
+  }
+
+  .slide--4__darkbg {
+    background-position-x: 5%;
+  }
+
+  .slide--5__darkbg {
+    background-position-x: 50%;
+  }
 }
