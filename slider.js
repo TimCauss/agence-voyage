@@ -5,7 +5,7 @@ $(document).ready(function () {
   var $slider = $(".slider");
   var $nav = $(".nav");
   var winW = $(window).width();
-  var animSpd = 750; // Change also in CSS
+  var animSpd = 200; // Change also in CSS
   var distOfLetGo = winW * 0.2;
   var curSlide = 1;
   var animation = false;
