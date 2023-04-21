@@ -238,14 +238,26 @@ nav svg {
         
     
     .destination input{ 
-        background-image:url(image/-recherche-icône-vecteur-loupe.jpg);
+        background-image:url(image/avion.jpg);
         background-position:right;
         background-repeat:no-repeat;
         background-size: 50px; 
         
         }
-    
-
+    .date input{         
+        background-image:url(image/images.png);
+        background-position:right;
+        background-repeat:no-repeat;
+        background-size: 50px;
+        
+    }
+    .sejour input{        
+        background-image:url(image/-recherche-icône-vecteur-loupe.jpg);
+        background-position:right;
+        background-repeat:no-repeat;
+        background-size: 45px;
+        
+    }
         button{
             font-size: 18px;
             color: white;
