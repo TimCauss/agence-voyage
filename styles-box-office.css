@@ -1,0 +1,52 @@
+/* Réinitialisation des marges et des rembourrages pour le corps de la page */
+body {
+    margin: 0;
+    padding: 20%;
+  }
+  
+  /* Centrage du titre */
+  h1 {
+    text-align: center;
+  }
+  
+  /* Style du tableau */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-style: solid;
+    
+  }
+  
+  /* Style des en-têtes de colonnes */
+  th {
+    background-color: #30a7df;
+    padding: 10px;
+    text-align: left;
+    border-style: solid;
+  }
+  
+  /* Style des lignes de données */
+  td {
+    padding: 10px;
+    text-align: left;
+    border-style: solid;
+  }
+  
+  /* Style des lignes impaires du tableau */
+  tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  /* Style des lignes paires du tableau */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+    border-style: solid;
+  }
+  .chart-container {
+    height: 300px;
+    width: 300px; /* Réduire la largeur du conteneur du graphique */
+    margin: 0 auto; /* Centrer le conteneur */
+    display: flex; /* Afficher les graphiques en ligne */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }

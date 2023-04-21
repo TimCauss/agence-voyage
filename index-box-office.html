@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="styles.css"> <!-- Lien vers le fichier CSS pour le style -->
+<html>
+<head>
+  <title>WOOKIEE ADVENTURE</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    .chart-container {
+      width: 40%; /* Réduire la largeur du conteneur du graphique */
+      margin: 0 auto; /* Centrer le conteneur */
+    }
+  </style>
+</head>
+<body>
+  <h1>Dash board - WOOKIEE ADVENTURE</h1>
+  <table>
+    <tr>
+      <th>Voyage</th>
+      <th>Date</th>
+      <th>Lieu</th>
+      <th>Prix</th>
+    </tr>
+    <tr>
+      <td>Escursion dans le desert</td>
+      <td>15 décembre 2019</td>
+      <td>Tatooine</td>
+      <td>2490 $</td>
+    </tr>
+    <tr>
+      <td>Escursion dans le desert</td>
+      <td>20 décembre 2019</td>
+      <td>Tatooine</td>
+      <td>2490 $</td>
+    </tr>
+    <tr>
+      <td>Escursion dans le desert</td>
+      <td>30 décembre 2019</td>
+      <td>Tatooine</td>
+      <td>2490 $</td>
+    </tr>
+    <tr>
+      <td>visite de reserve de Wookies</td>
+      <td>20 janvier 2020</td>
+      <td>Kashyyyk</td>
+      <td>2990 €</td>
+    </tr>
+    <tr>
+      <td>visite de reserve de Wookies</td>
+      <td>25 janvier 2020</td>
+      <td>Kashyyyk</td>
+      <td>2990 €</td>
+    </tr>
+    <tr>
+      <td>visite de reserve de Wookies</td>
+      <td>02 janvier 2020</td>
+      <td>Kashyyyk</td>
+      <td>2990 €</td>
+    </tr>
+    <tr>
+      <td>Palais des Congrès</td>
+      <td>5 mai 2020</td>
+      <td>Naboo</td>
+      <td>4490 €</td>
+    </tr>
+    <tr>
+      <td>Palais des Congrès</td>
+      <td>6 mai 2020</td>
+      <td>Naboo</td>
+      <td>4490 €</td>
+    </tr>
+    <tr>
+      <td>Palais des Congrès</td>
+      <td>9 mai 2020</td>
+      <td>Naboo</td>
+      <td>4490 €</td>
+    </tr>
+    
+  </table>
+  <!-- Diagramme circulaire pour les prix -->
+  <canvas id="chartPie"></canvas>
+
+  <!-- Graphique linéaire pour les dates -->
+  <canvas id="chartLine"></canvas>
+
+  <script>
+    // Données pour le diagramme circulaire
+    var dataPie = {
+      labels: ["Tatooine", "Tatooine", "Tatooine", "kashyyyk", "kashyyyk", "kashyyyk","Naboo", "Naboo", "Naboo"],
+      datasets: [{
+        data: [2490, 2490, 2490, 2990, 2990, 2990, 4490, 4490, 4490],
+        backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"]
+      }]
+    };
+
+    // Configuration du diagramme circulaire
+    var configPie = {
+      type: 'pie',
+      data: dataPie
+    };
+
+    // Création du diagramme circulaire
+    var chartPie = new Chart(document.getElementById("chartPie"), configPie);
+
+    // Données pour le graphique linéaire
+    var dataLine = {
+      labels: ["15 décembre 2019", "20 décembre 2019", "30 décembre 2019", "2 janvier 2020", "20 janvier 2020", "25 janvier 2020", "5 mai 2020", "6 mai 2020", "9 mai 2020"],
+      datasets: [{
+        label: "Prix",
+        data: [2490, 2490, 2490, 2990, 2990, 2990, 4490, 4490, 4490, ],
+        borderColor: "#3e95cd",
+        fill: false
+      }]
+    };
+
+    // Configuration du graphique linéaire
+    var configLine = {
+      type: 'line',
+      data: dataLine,
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    };
+
+    // Création du graphique linéaire
+    var chartLine = new Chart(document.getElementById("chartLine"), configLine);
+  </script>
+```
