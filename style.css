@@ -88,6 +88,17 @@ nav svg {
     width: 20px;
 }
 
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.ltitle {
+    display: none;
+    font-size: 25px;
+    color: white;
+}
+
 .head-logo {
     flex: 1;
     transition: transform 200ms;
@@ -284,8 +295,31 @@ main {
     bottom: 10px;
 }
 
+footer {
+    background-color: 292929;
+    color: aliceblue;
+    fill: rgb(255, 255, 255);
+}
+
+
 /*! SECTION CARD STYLE END */
 
+/*! FOOTER STYLE START */
+.logo-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.head-logo-footer {
+    transition: transform 200ms;
+}
+
+.head-logo-footer:hover {
+    animation: logoanim 1s infinite ease-in-out;
+}
 
 /*! MEDIA QUERY START */
 /**MEDIA QUERY iPhone12 390x844 */
@@ -334,7 +368,9 @@ main {
     .burger-menu {
         display: none;
     }
-
+    .ltitle {
+        display: flex;
+    }
     nav ul {
         display: flex;
     }

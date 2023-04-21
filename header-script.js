@@ -3,6 +3,9 @@ const header = document.querySelector("header");
 //on stock les elements svg-icon
 const logo = document.getElementsByClassName("svg-icon");
 
+const logoTitle = document.getElementsByClassName("ltitle");
+
+console.log(logoTitle);
 const burger = document.querySelector(".burger-menu");
 const nav2 = document.querySelector(".nav2");
 let menuActive = false;
@@ -18,6 +21,9 @@ window.addEventListener("scroll", () => {
       //on ajoute la classe logo-scroll aux éléments du tableau logo
       logo[i].classList.add("logo-scroll");
     }
+    for (let i = 0; i < logoTitle.length; i++) {
+      logoTitle[i].classList.add("logo-scroll");
+    }
   } else {
     //sinon on l'enlève
     if ((menuActive == false) & (window.scrollY == 0)) {
@@ -26,6 +32,9 @@ window.addEventListener("scroll", () => {
       for (let item = 0; item < logo.length; item++) {
         //on enlève la classe logo-scroll aux éléments du tableau logo
         logo[item].classList.remove("logo-scroll");
+      }
+      for (let i = 0; i < logoTitle.length; i++) {
+        logoTitle[i].classList.remove("logo-scroll");
       }
     }
   }
