@@ -358,6 +358,24 @@ footer {
     background-size: 100% 2px;
 }
 
+.reseau-footer {
+    background-color: #353535;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.reseau-footer img {
+    width: 40px;
+    transition: scale 200ms;
+}
+
+.reseau-footer img:hover {
+    scale: 1.1;
+}
+
 /*! MEDIA QUERY START */
 /**MEDIA QUERY iPhone12 390x844 */
 @media screen and (min-width: 390px) {
@@ -401,19 +419,24 @@ footer {
     /* .conteneur-card:hover {
         scale: 1.2;
     } */
+    .ltitle {
+        display: flex;
+    }
+}
+
+/**MEDIA QUERY Ipad Pro 12.9 1024*1366 */
+@media screen and (min-width: 1024px) {
+    nav ul {
+        display: flex;
+    }
 
     .burger-menu {
         display: none;
     }
 
-    .ltitle {
-        display: flex;
-    }
 
-    nav ul {
-        display: flex;
-    }
 }
+
 
 /**MEDIA QUERY Macbook Pro 1440*900 */
 @media screen and (min-width: 1440px) {
