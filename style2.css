@@ -87,19 +87,187 @@ nav svg {
 }
 .prix{
     font-size: 50px;
-    padding: 3%;
-    background-color: white;
+    padding: 2% 3%;
     border-radius: 20%;
     bottom:30%;
     right:15%;
+    background-color: rgba(555,555,555,1);
 }
 .description{
     margin: 2% 15%;
     font-size: 18px;
     color: white;
     background-color: rgba(555,555,555,0.2);
+    display: flex;
+    flex-direction: row;
+    
+    
 }
 .description p{
-    max-width: 50%;
-    margin: 2%;
+    margin: 5%;
+    text-align: justify;
+}
+.description img{
+    height: 20vh;
+   
+}
+.imagegif{
+    padding: 2%;   
+}
+                            /* reservation*/
+
+.reservation{
+    display: flex;
+    margin: 2% 15%;
+    padding: 5%;
+    background-color: rgba(555,555,555,0.2);
+}
+
+
+                        /***** formulaire *****/    
+ 
+    
+.conteneur-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;        
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+input {
+    width: 320px;
+    height: 30px;
+    border-radius: 5px; 
+    border-style: none;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+.destination input{ 
+    background-image:url(image/-recherche-icône-vecteur-loupe.jpg);
+    background-position:right;
+    background-repeat:no-repeat;
+    background-size: 50px; 
+}
+button{
+        font-size: 18px;
+        color: white;
+        background-color: darkorange;
+        height: 40px;
+        width: 200px;
+        cursor: pointer;
+        border-style: none;
+        border-radius: 20px;
+        display: block;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+}
+                                    /*animation faucon */
+.faucon:hover{
+    animation: faucon 2s ease-out infinite;
+}
+@keyframes faucon {
+    0% {
+        opacity: 0;
+        transform: translateY(-0.75em) translateX(-0.75em);
+    }
+    20% {
+        opacity: 1;
+    }
+    89% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateZ(-1000em) translateY(-200em) translateX(1000em);
+    }
+}
+.conteneur-faucon{
+    display: flex;
+    perspective: 800px;
+    transform-style: preserve3d;
+    margin-top: 150px;
+    padding-left: 8%;
+    z-index: 1;
+}
+                            /* Calendar*/
+
+.conteneur-calendar{
+    margin: 0% 10%;
+    width: 600px;
+    
+}
+.calendar-header{
+    display: inline-block;
+    width: 100%;
+}
+.jour{
+    display: flex;
+    height: 25px;
+    background-color: white;
+}
+.jour div{
+    width: 25%
+}
+.jour p{
+    text-align: center;
+    padding-top: 2px;
+}
+.calendar-body{
+    display: flex;
+    flex-direction: column;
+    height: 660px;
+    width: 100%;
+    background-color: rgb(187, 181, 181);
+    align-items: stretch;
+
+}
+.calendar-body .row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-top: 1px solid gray;
+    
+}
+.calendar-body div{
+    background-color: rgba(255, 255, 255, 0.534);
+    width: 25%;
+    height: 100%;
+    border-right: 1px solid gray;
+}
+.calendar-body p{
+    text-align: right;
+    padding-top: 2px;
+    padding-right: 4px;
+}
+.calendar-body .voyage-date{
+    background-color: white;
+    transition: 200ms;
+}
+.calendar-body .voyage-date:hover{
+    background-color: white;
+    scale: 1.5;
+    border:darkgoldenrod solid 1px;
+}
+.calendar-body .prix-calendar{
+    display: flex;
+    border: 0px;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+
+}
+.calendar-body .offre{
+    height: 5%;
+    border: 0;
+    font-size: 25px;
+    padding-bottom: 15PX;
+
 }
