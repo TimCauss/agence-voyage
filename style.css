@@ -344,9 +344,9 @@ nav svg {
     height: auto;
     max-height: 150px;
     max-width: 150px;
-    border-radius: 40%;
+    border-radius: 150%;
 }
- p{
-    color: white;
- }
-  
+
+  .commentaire{
+    color: white
+  }
