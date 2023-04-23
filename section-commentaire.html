@@ -8,24 +8,75 @@
 </head>
 <body>
     <section class="commentaire">
-        <div class="conteneur-commentaire">
-            <div class="scroller">
-                <div class="dark-vador"><img src="image/dark-vador.jpeg" alt="">
-                <p class="commentaire">Mon voyage sur Tatooine a été une perte de temps considérable. Non seulement j'ai dû supporter des tempêtes de sable désagréables, mais je n'ai trouvé aucun indice de la présence des rebelles ou de Luke Skywalker. Les habitants du désert étaient ignorants et sans valeur pour moi. Je regrette d'avoir gaspillé mon temps précieux dans ce trou perdu.</p>
-                </div>
-                <div class="r2d2">
-                <img src="image/r2d2.jpg" alt="">
-                <p>Bip-boop-beep! Whistle-whirr-chirp. Beep-boop!</p>
-                </div>
-                <img src="" alt="">
+        
 
-            </div>
-            <label for="content">commentaire :</label>
-            <textarea id="content" name="content"></textarea>
-        </div>
-
-
-
+<div class="comment-box">
+  <div class="user-avatar">
+    <img src="image/dark-vador.jpeg" alt="Avatar de l'utilisateur">
+  </div>
+  <div class="comment-content">
+    <div class="user-info">
+      <h3 class="username">Dark Vador</h3>
+      <div class="star-rating">
+        <input type="radio" id="rating1" name="rating" value="1">
+        <label for="rating1" title="Mauvais">&#9733;</label>
+      </div>
+    </div>
+    <p class="comment-text">Mon voyage sur Tatooine a été une perte de temps considérable. Non seulement j'ai dû supporter des tempêtes de sable désagréables, mais je n'ai trouvé aucun indice de la présence des rebelles ou de Luke Skywalker. Les habitants du désert étaient ignorants et sans valeur pour moi. Je regrette d'avoir gaspillé mon temps précieux dans ce trou perdu.</p>
+    <span class="comment-date">Publié le 23 avril 2023</span>
+  </div>
+  <div class="user-avatar">
+    <img src="image/r2d2.jpg" alt="Avatar de l'utilisateur">
+  </div>
+  <div class="comment-content">
+    <div class="user-info">
+      <h3 class="username">R2D2</h3>
+      <div class="star-rating">
+        <input type="radio" id="rating5" name="rating" value="5">
+        <label for="rating5" title="Excellent">&#9733;</label>
+        <input type="radio" id="rating4" name="rating" value="4">
+        <label for="rating4" title="Très bon">&#9733;</label>
+        <input type="radio" id="rating3" name="rating" value="3">
+        <label for="rating3" title="Bon">&#9733;</label>
+        <input type="radio" id="rating2" name="rating" value="2">
+        <label for="rating2" title="Médiocre">&#9733;</label>
+        <input type="radio" id="rating1" name="rating" value="1">
+        <label for="rating1" title="Mauvais">&#9733;</label>
+      </div>
+    </div>
+    <p class="comment-text">Bip-boop-beep! Whistle-whirr-chirp. Beep-boop!</p>
+    <span class="comment-date">Publié le 23 avril 2023</span>
+  </div>
+</div>
+<form>
+    <div class="form-group">
+      <label for="username">Nom d'utilisateur</label>
+      <input type="text" id="username" name="username">
+    </div>
+    <div class="form-group">
+      <label for="comment">Commentaire</label>
+      <textarea id="comment" name="comment"></textarea>
+    </div>
+    <div class="form-group">
+      <label>Appréciation</label>
+      <div class="star-rating">
+        <input type="radio" id="rating5" name="rating" value="5">
+        <label for="rating5" title="Excellent">&#9733;</label>
+        <input type="radio" id="rating4" name="rating" value="4">
+        <label for="rating4" title="Très bon">&#9733;</label>
+        <input type="radio" id="rating3" name="rating" value="3">
+        <label for="rating3" title="Bon">&#9733;</label>
+        <input type="radio" id="rating2" name="rating" value="2">
+        <label for="rating2" title="Médiocre">&#9733;</label>
+        <input type="radio" id="rating1" name="rating" value="1">
+        <label for="rating1" title="Mauvais">&#9733;</label>
+    </div>
+    </div>
+    <div class="form-group">
+    <input type="submit" value="Envoyer">
+    </div>
+      </form>
+    </div>
 
 
     </section>
