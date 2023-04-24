@@ -13,6 +13,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    pointer-events: auto;
 }
 
 /*! HEADER STYLE START */
@@ -265,7 +266,7 @@ main {
     background-color: #9696967a;
 }
 
-input {
+.conteneur-input input {
     width: 320px;
     height: 30px;
     border-radius: 5px;
@@ -313,6 +314,8 @@ button {
     margin-right: auto;
     transition: 200ms;
 }
+
+
 
 button:hover {
     scale: 1.1;
@@ -465,6 +468,118 @@ footer {
     scale: 1.1;
 }
 
+/*! CONTACT PAGE STYLE START */
+
+.reservation {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+.reservation h2 {
+    font-weight: 800;
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#formulaire {
+    font-weight: 500;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 25px;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+#formulaire .form_title {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0;
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.form-sous-container {
+    width: 100%;
+    padding: 70px;
+    background-color: hsla(53, 6%, 32%, 0.438);
+}
+.fmain_container {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: row;
+    width: 100%;
+    background-color: #387397;
+}
+
+.form_container1 {
+    height: 540px;
+    width: 100%;
+    padding: 0px 20px 40px 20px;
+}
+
+.form_container2 {
+    width: 50%;
+    display: none;
+}
+
+.inputFalse {
+    font-size: 15px;
+    color: #ff0000;
+    border-bottom: 1px #ff0000 solid;
+    transition: 0.5s;
+}
+
+#formulaire input {
+    height: 30px;
+}
+#formulaire label {
+    color: white;
+}
+
+#formulaire input:focus {
+    outline: none;
+    color: #989898;
+    border-bottom: 1px solid #007aff;
+    transition: 0.5s;
+}
+
+#formulaire input:not(:placeholder-shown) {
+    color: #989898;
+    border-bottom: 1px solid #007aff;
+}
+
+#formulaire button {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: 387397;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+}
+
+#formulaire button:hover {
+    transform: scale(1.2);
+    background-color: #4b93df;
+}
+
+#formulaire button img {
+    margin-right: 10px;
+}
+
 /*! MEDIA QUERY START */
 /**MEDIA QUERY iPhone12 390x844 */
 @media screen and (min-width: 390px) {
@@ -505,11 +620,18 @@ footer {
         scale: 1.2;
     }
 
-    /* .conteneur-card:hover {
-        scale: 1.2;
-    } */
+
     .ltitle {
         display: flex;
+    }
+
+    .form_container1 {
+        width: 50%;
+    }
+
+    .form_container2 {
+        width: 50%;
+        display: block;
     }
 }
 
