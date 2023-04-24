@@ -9,18 +9,10 @@
 body {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-}
-
-#background-video {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
+    background-image: url(/images/fond3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 /*! HEADER STYLE START */
@@ -29,7 +21,7 @@ header {
     position: fixed;
     width: 100%;
     height: 60px;
-    background-color: hsla(0, 0%, 51%, 0.3);
+    background-color: hsla(330, 1%, 65%, 0.096);
     justify-content: space-between;
     align-items: center;
     z-index: 2;
@@ -310,15 +302,20 @@ input {
 button {
     font-size: 18px;
     color: white;
-    background-color: darkorange;
+    background-color: #387397;
     height: 40px;
     width: 200px;
     cursor: pointer;
     border-style: none;
-    border-radius: 20px;
+    border-radius: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    transition: 200ms;
+}
+
+button:hover {
+    scale: 1.1;
 }
 
 /*! Formulaire Recherche END */
@@ -371,7 +368,7 @@ button {
 }
 
 .type {
-    color: rgb(108, 177, 241);
+    color: #387397;
     font-size: 18px;
     margin-top: 20px;
     padding: 2%;
