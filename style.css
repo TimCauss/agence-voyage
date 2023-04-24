@@ -333,17 +333,7 @@ nav svg {
 
 }
 
-.scroller {
-    background: url(./images/la-galaxie-dans-laquelle-le-fluor-a-ete-detecte-se-trouve-a-12-milliards-d-annees-lumiere-image-d-illustration-pixabay-1636110175.jpg);
-    border-radius: 30px;
-    border-bottom-left-radius: none;
-    border-bottom-right-radius: none;
-    width: 100%;
-    height: auto;
-    overflow-y: scroll;
-    scrollbar-color: rebeccapurple green;
-    scrollbar-width: thin;
-  }
+
 
 .conteneur-commentaire img{
     width: auto;
@@ -413,10 +403,9 @@ nav svg {
   /**** suite ****/
 
   .comment-box {
-    background: url(image/Capture\ d’écran\ 2023-04-19\ 140506.png);
-    max-height: 200px;
-    overflow-y: auto; 
-    border: 1px solid #ccc;
+    background: url(images/la-galaxie-dans-laquelle-le-fluor-a-ete-detecte-se-trouve-a-12-milliards-d-annees-lumiere-image-d-illustration-pixabay-1636110175.jpg);
+    max-height: auto;
+    border: 20px solid #ccc;
     padding: 10px;
   }
   
@@ -425,7 +414,6 @@ nav svg {
   }
   
   .comment {
-    display: flex;
     margin-bottom: 10px;
   }
   
@@ -533,3 +521,8 @@ nav svg {
     right: 0;
     cursor: pointer;
   }
+  .com-vador{
+    display: flex;
+    padding-bottom: 50px;
+  }
+  
