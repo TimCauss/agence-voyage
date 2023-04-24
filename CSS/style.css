@@ -7,9 +7,20 @@
 }
 
 body {
-    background-color: rgb(167, 167, 167);
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+}
+
+#background-video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 
@@ -240,9 +251,66 @@ main {
 }
 
 /*! HERO STYLE END */
-main {
-    background-color: hsla(0, 0%, 100%, 0.443);
+
+/*! Formulaire Recherche START */
+
+.conteneur-input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;        
+    margin: 0px 0px 10px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #9696967a;
 }
+
+input {
+    width: 320px;
+    height: 30px;
+    border-radius: 5px; 
+    border-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+.destination input{
+    background-image:url(/images/icon-x-win.png);
+    background-position:97%;
+    background-repeat:no-repeat;
+    background-size: 30px;
+    
+    }
+.date input{
+    background-image:url(/images/images.png);
+    background-position:right;
+    background-repeat:no-repeat;
+    background-size: 50px;
+    
+}
+.sejour input{
+    background-image:url(/images/icons8-planète-60.png);
+    background-position:98%;
+    background-repeat:no-repeat;
+    background-size: 30px;
+    
+}
+    button{
+        font-size: 18px;
+        color: white;
+        background-color: darkorange;
+        height: 40px;
+        width: 200px;
+        cursor: pointer;
+        border-style: none;
+        border-radius: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+/*! Formulaire Recherche END */
 
 /*! SECTION CARD STYLE START */
 .section-card {
@@ -300,7 +368,7 @@ main {
 /*! FOOTER STYLE START */
 
 footer {
-    background-color: 292929;
+    background-color: #292929;
     color: aliceblue;
     fill: rgb(255, 255, 255);
 }
@@ -312,6 +380,7 @@ footer {
     align-items: center;
     justify-content: center;
     margin: 20px 0 20px 0;
+    padding-top: 20px;
     width: 100%;
 }
 
@@ -462,18 +531,4 @@ footer {
         padding: 20px;
 
     }
-}
-
-
-
-#background-video {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
 }
