@@ -2,6 +2,13 @@
     margin: 0;
     padding: 0;
 }
+body {
+    background-image: url(/images/fond3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 .section-card{
     display: flex;
     flex-wrap: wrap;
