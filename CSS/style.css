@@ -439,7 +439,7 @@ button:hover {
     transition: 200ms;
 }
 
-.guide-title-hidden{
+.guide-title-hidden {
     text-decoration: underline 3px #FE5B02;
     font-size: 30px;
     margin-top: -20px;
@@ -593,7 +593,8 @@ footer {
     border: none;
     border-radius: none;
 }
-.form_container2 iframe{
+
+.form_container2 iframe {
     border: none;
 }
 
@@ -607,13 +608,13 @@ footer {
 #formulaire input {
     height: 30px;
     border-radius: 5px;
-    border:0;
+    border: 0;
     outline: 0.2px solid grey;
 }
 
 #formulaire textarea {
     border-radius: 5px;
-    border:0;
+    border: 0;
     outline: 0.2px solid grey;
 }
 
@@ -648,7 +649,7 @@ footer {
     padding: 5px 50px;
     border: none;
     border-radius: 5px;
-    transition: 200ms        ;
+    transition: 200ms;
 }
 
 #formulaire button:hover {
@@ -671,6 +672,10 @@ footer {
     color: #463F38;
     padding: 30px;
     background-color: rgba(255, 255, 255, 0.5);
+}
+
+.gd-header-cont h1 {
+    font-size: 24px;
 }
 
 .guide-header {
@@ -697,7 +702,7 @@ footer {
     max-width: 394px;
     flex-wrap: wrap;
     margin-top: 20px;
-/*     flex: 1 0 100%; */
+    /*     flex: 1 0 100%; */
 }
 
 .main-guide h2 {
@@ -706,12 +711,12 @@ footer {
     font-style: normal;
     font-weight: 400;
     color: #463F38;
-    font-size: 32px;
+    font-size: 20px;
     line-height: 44px;
-    padding: 25px;
+    padding-top: 20px;
 }
 
-.art-container{
+.art-container {
     width: 100%;
 }
 
@@ -724,13 +729,14 @@ footer {
     object-fit: cover;
     padding: 0 20px;
 }
+
 .guide-articles h3 {
     text-align: center;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
-    width:100%;
+    width: 100%;
     line-height: 20px;
     padding: 0px 50px;
     color: #463F38;
@@ -748,6 +754,7 @@ footer {
     color: #0487FF;
     margin-left: 20px;
 }
+
 .art-date {
     font-size: 12px;
     color: #ACACAC;
@@ -839,6 +846,14 @@ footer {
         background-image: url(/images/guide-landscape-header-XL.png);
         height: 356px;
     }
+
+    .gd-header-cont h1 {
+        font-size: 35px;
+    }
+
+    .main-guide h2 {
+        font-size: 28px;
+    }
 }
 
 /**MEDIA QUERY Ipad Pro 12.9 1024*1366 */
@@ -855,6 +870,7 @@ footer {
         max-width: 30%;
         margin: 50px 5%;
     }
+
     .guide-header {
         background-image: url(/images/guide-landscape-header-XL.png);
         background-position-y: -100px;
@@ -885,6 +901,7 @@ footer {
         right: 100px;
         padding: 20px;
     }
+
     .guide-header {
         background-position-y: -300px;
         background-image: url(/images/guide-landscape-header-XL.png);
