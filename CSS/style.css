@@ -683,7 +683,15 @@ footer {
     background-size: cover;
 }
 
-.guide-articles h2 {
+.guide-articles {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    gap: 60px;
+    padding-bottom: 60px;
+}
+
+.main-guide h2 {
     text-align: center;
     font-family: 'Open Sans';
     font-style: normal;
@@ -705,7 +713,9 @@ footer {
 }
 
 .art-container img {
+    width: 100%;
     object-fit: cover;
+    padding: 0 20px;
 }
 .guide-articles h3 {
     text-align: center;
@@ -714,7 +724,7 @@ footer {
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
-    padding: 0px 50px;
+    padding: 0px 100px;
     color: #463F38;
 }
 
@@ -724,6 +734,18 @@ footer {
     flex-flow: row nowrap;
     justify-content: space-between;
 }
+
+.art-type {
+    font-size: 12px;
+    color: #0487FF;
+    margin-left: 20px;
+}
+.art-date {
+    font-size: 12px;
+    color: #ACACAC;
+    margin-right: 20px;
+}
+
 
 /*! MEDIA QUERY START */
 /**MEDIA QUERY iPhone12 390x844 */
