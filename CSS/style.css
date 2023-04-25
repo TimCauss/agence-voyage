@@ -634,6 +634,72 @@ footer {
     margin-right: 10px;
 }
 
+/*! CONTACT PAGE STYLE END */
+
+/*! GUIDE PAGE STYLE START */
+
+.main-guide {
+    background-color: #FFFFFF;
+}
+
+.gd-header-cont {
+    color: #463F38;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.guide-header {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-image: url(/images/guide-landscape-header.png);
+    height: 256px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.guide-articles h2 {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    color: #463F38;
+    font-size: 32px;
+    line-height: 44px;
+    padding: 25px;
+}
+
+.art-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.art-container figure {
+    width: 100%
+}
+
+.art-container img {
+    object-fit: cover;
+}
+.guide-articles h3 {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0px 50px;
+    color: #463F38;
+}
+
+.art-footer {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
 /*! MEDIA QUERY START */
 /**MEDIA QUERY iPhone12 390x844 */
 @media screen and (min-width: 390px) {
@@ -690,29 +756,29 @@ footer {
 
     /** SECTION GUIDE STYLE START*/
 
-.guide-container {
-    background-size: cover;
-    min-height: 375px;
-    width: 100%;
-    display: flex;
-    justify-content: start;
-    color: #463F38;
-}
+    .guide-container {
+        background-size: cover;
+        min-height: 375px;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        color: #463F38;
+    }
 
-.guide-txt-presentation {
-    max-width: 50%;
-    margin: 50px 5%;
-}
+    .guide-txt-presentation {
+        max-width: 50%;
+        margin: 50px 5%;
+    }
 
-.guide-txt-presentation button {
-    font-family: 'Open Sans';
-    font-size: 20px;
-    margin-top: 30px;
-    padding: 5px 50px;
-    background-color: #FE5B02;
-    border: none;
-    color: #FFFFFF;
-}
+    .guide-txt-presentation button {
+        font-family: 'Open Sans';
+        font-size: 20px;
+        margin-top: 30px;
+        padding: 5px 50px;
+        background-color: #FE5B02;
+        border: none;
+        color: #FFFFFF;
+    }
 }
 
 /**MEDIA QUERY Ipad Pro 12.9 1024*1366 */
