@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="style2.css" <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="/CSS/style2.css" <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -115,7 +115,15 @@
             <h3>Naboo</h3>
             <img src="/images/Naboo.webp" height="150px">
           </div>
-          
+          <div class="info-prix">
+            <div class="prix">
+              <p>dés <span>4490</span><img src="/images/r1.svg" height="20px" alt=""> /pers</p>
+              <p>Navette + Transferts + Cantina + Tout inclus</p>
+            </div>
+            <div class="bouton-prix">
+            <button>Voir offres</button>
+            </div>
+          </div>
           <div class="liste">
             <ul> Vous allez aimer !
               <li>hdrjhsrtjs</li>
@@ -490,9 +498,10 @@
       </div>
     </section>
     <section class="commentaire">
-
+        
 
       <div class="comment-box">
+        <div class="com-vador">
         <div class="user-avatar">
           <img src="images/dark-vador.jpeg" alt="Avatar de l'utilisateur">
         </div>
@@ -504,12 +513,11 @@
               <label for="rating1" title="Mauvais">&#9733;</label>
             </div>
           </div>
-          <p class="comment-text">Mon voyage sur Tatooine a été une perte de temps considérable. Non seulement j'ai dû
-            supporter des tempêtes de sable désagréables, mais je n'ai trouvé aucun indice de la présence des rebelles
-            ou de Luke Skywalker. Les habitants du désert étaient ignorants et sans valeur pour moi. Je regrette d'avoir
-            gaspillé mon temps précieux dans ce trou perdu.</p>
+          <p class="comment-text">Mon voyage sur Tatooine a été une perte de temps considérable. Non seulement j'ai dû supporter des tempêtes de sable désagréables, mais je n'ai trouvé aucun indice de la présence des rebelles ou de Luke Skywalker. Les habitants du désert étaient ignorants et sans valeur pour moi. Je regrette d'avoir gaspillé mon temps précieux dans ce trou perdu.</p>
           <span class="comment-date">Publié le 23 avril 2023 </span>
         </div>
+        </div>
+        <div class="com-vador">
         <div class="user-avatar">
           <img src="images/r2d2.jpg" alt="Avatar de l'utilisateur">
         </div>
@@ -532,6 +540,8 @@
           <p class="comment-text">Bip-boop-beep! Whistle-whirr-chirp. Beep-boop!</p>
           <span class="comment-date">Publié le 23 avril 2023</span>
         </div>
+      </div>
+      <div class="com-vador">
         <div class="user-avatar">
           <img src="images/C3PO.webp" alt="Avatar de l'utilisateur">
         </div>
@@ -547,71 +557,109 @@
               <label for="rating3" title="Bon">&#9733;</label>
               <input type="radio" id="rating2" name="rating" value="2">
               <label for="rating2" title="Médiocre">&#9733;</label>
-
+              
             </div>
           </div>
           <p class="comment-text">"Cher ami,
-
-            Je tenais à partager mon expérience de voyage sur Tatooine avec vous. En tant que droïde de protocole, j'ai
-            été chargé d'assister ma maîtresse, la princesse Leia Organa. Malgré les défis et les dangers auxquels nous
-            avons dû faire face, Tatooine s'est révélée être une planète fascinante.
-
-            Les dunes de sable à perte de vue, les deux soleils brillants dans le ciel, et les habitants locaux, tels
-            que les Jawas et les Tusken Raiders, ont constitué une expérience unique. Bien que la chaleur soit parfois
-            étouffante, j'ai été impressionné par la résilience et la bravoure des habitants de Tatooine.
-
-            Cependant, je dois noter que les conditions de vie sur Tatooine sont extrêmement arides et inhospitalières,
-            ce qui peut rendre le voyage difficile pour les organiques et les droïdes. Les tempêtes de sable sont
-            fréquentes, et la menace des créatures indigènes, comme les krayt dragons, est bien réelle.
-
-            En ce qui concerne les installations touristiques, Tatooine offre peu d'options pour les voyageurs. Les
-            villes, comme Mos Eisley, sont plutôt rudimentaires et peu développées. Cependant, le marché des droïdes de
-            Mos Eisley est bien approvisionné en pièces détachées, ce qui peut être utile pour les réparations
-            d'urgence.
-
-            En somme, Tatooine est une destination unique, mais aussi exigeante. Si vous décidez de vous y aventurer, je
-            vous conseille de bien vous préparer en emportant suffisamment d'eau, de vêtements de protection et de vous
-            informer sur les dangers potentiels.
-
-            Que la Force soit avec vous !
-
-            Cordialement,
-            C-3PO"</p>
+      
+              Je tenais à partager mon expérience de voyage sur Tatooine avec vous. En tant que droïde de protocole, j'ai été chargé d'assister ma maîtresse, la princesse Leia Organa. Malgré les défis et les dangers auxquels nous avons dû faire face, Tatooine s'est révélée être une planète fascinante.
+              
+              Les dunes de sable à perte de vue, les deux soleils brillants dans le ciel, et les habitants locaux, tels que les Jawas et les Tusken Raiders, ont constitué une expérience unique. Bien que la chaleur soit parfois étouffante, j'ai été impressionné par la résilience et la bravoure des habitants de Tatooine.
+              
+              Cependant, je dois noter que les conditions de vie sur Tatooine sont extrêmement arides et inhospitalières, ce qui peut rendre le voyage difficile pour les organiques et les droïdes. Les tempêtes de sable sont fréquentes, et la menace des créatures indigènes, comme les krayt dragons, est bien réelle.
+              
+              En ce qui concerne les installations touristiques, Tatooine offre peu d'options pour les voyageurs. Les villes, comme Mos Eisley, sont plutôt rudimentaires et peu développées. Cependant, le marché des droïdes de Mos Eisley est bien approvisionné en pièces détachées, ce qui peut être utile pour les réparations d'urgence.
+              
+              En somme, Tatooine est une destination unique, mais aussi exigeante. Si vous décidez de vous y aventurer, je vous conseille de bien vous préparer en emportant suffisamment d'eau, de vêtements de protection et de vous informer sur les dangers potentiels.
+              
+              Que la Force soit avec vous !
+              
+              Cordialement,
+              C-3PO"</p>
           <span class="comment-date">Publié le 23 avril 2023</span>
         </div>
       </div>
-      <form>
-        <div class="form-group">
-          <label for="username">Nom d'utilisateur</label>
-          <input type="text" id="username" name="username">
+      <div class="com-vador">
+        <div class="user-avatar">
+          <img src="/images/han-solo.webp" alt="Avatar de l'utilisateur">
         </div>
-        <div class="form-group">
-          <label for="comment">Commentaire</label>
-          <textarea id="comment" name="comment"></textarea>
-        </div>
-        <div class="form-group">
-          <label>Appréciation</label>
-          <div class="star-rating">
-            <input type="radio" id="rating5" name="rating" value="5">
-            <label for="rating5" title="Excellent">&#9733;</label>
-            <input type="radio" id="rating4" name="rating" value="4">
-            <label for="rating4" title="Très bon">&#9733;</label>
-            <input type="radio" id="rating3" name="rating" value="3">
-            <label for="rating3" title="Bon">&#9733;</label>
-            <input type="radio" id="rating2" name="rating" value="2">
-            <label for="rating2" title="Médiocre">&#9733;</label>
-            <input type="radio" id="rating1" name="rating" value="1">
-            <label for="rating1" title="Mauvais">&#9733;</label>
+        <div class="comment-content">
+          <div class="user-info">
+            <h3 class="username">Han Solo</h3>
+            <div class="star-rating">
+              <input type="radio" id="rating5" name="rating" value="5">
+              <label for="rating5" title="Excellent">&#9733;</label>
+              <input type="radio" id="rating4" name="rating" value="4">
+              <label for="rating4" title="Très bon">&#9733;</label>
+              <input type="radio" id="rating3" name="rating" value="3">
+              <label for="rating3" title="Bon">&#9733;</label>
+              <input type="radio" id="rating2" name="rating" value="2">
+              <label for="rating2" title="Médiocre">&#9733;</label>
+              
+            </div>
           </div>
+          <p class="comment-text">
+              Tais toi C-3PO!!!!! Chewy fais quelque chose....</p>
+          <span class="comment-date">Publié le 23 avril 2023</span>
         </div>
-        <div class="form-group">
-          <input type="submit" value="Envoyer">
-        </div>
-      </form>
       </div>
-
-
-    </section>
+      <div class="com-vador">
+        <div class="user-avatar">
+          <img src="images/chewbacca.webp" alt="Avatar de l'utilisateur">
+        </div>
+        <div class="comment-content">
+          <div class="user-info">
+            <h3 class="username">Chewbaka</h3>
+            <div class="star-rating">
+              <input type="radio" id="rating5" name="rating" value="5">
+              <label for="rating5" title="Excellent">&#9733;</label>
+              <input type="radio" id="rating4" name="rating" value="4">
+              <label for="rating4" title="Très bon">&#9733;</label>
+              <input type="radio" id="rating3" name="rating" value="3">
+              <label for="rating3" title="Bon">&#9733;</label>
+              <input type="radio" id="rating2" name="rating" value="2">
+              <label for="rating2" title="Médiocre">&#9733;</label>
+              
+            </div>
+          </div>
+          <p class="comment-text">
+            RRRAAAARRRRRR! Grrrrrrrrrrrr! HHHRRRRRR!</p>
+          <span class="comment-date">Publié le 23 avril 2023</span>
+        </div>
+      </div>
+      </div>
+      <form>
+          <div class="form-group">
+            <label for="username">Nom d'utilisateur</label>
+            <input type="text" id="username" name="username">
+          </div>
+          <div class="form-group">
+            <label for="comment">Commentaire</label>
+            <textarea id="comment" name="comment"></textarea>
+          </div>
+          <div class="form-group">
+            <label>Appréciation</label>
+            <div class="star-rating">
+              <input type="radio" id="rating5" name="rating" value="5">
+              <label for="rating5" title="Excellent">&#9733;</label>
+              <input type="radio" id="rating4" name="rating" value="4">
+              <label for="rating4" title="Très bon">&#9733;</label>
+              <input type="radio" id="rating3" name="rating" value="3">
+              <label for="rating3" title="Bon">&#9733;</label>
+              <input type="radio" id="rating2" name="rating" value="2">
+              <label for="rating2" title="Médiocre">&#9733;</label>
+              <input type="radio" id="rating1" name="rating" value="1">
+              <label for="rating1" title="Mauvais">&#9733;</label>
+          </div>
+          </div>
+          <div class="form-group">
+          <input type="submit" value="Envoyer">
+          </div>
+            </form>
+          </div>
+      
+      
+          </section>
   </main>
   <footer>
     <div class="c1">
