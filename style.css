@@ -319,88 +319,11 @@ nav svg {
 
 
 
-/****** commentaire ******
-
-.conteneur-commentaire{
-    padding: 0;
-    margin-left: 12px;
-    border-style: groove;
-    width: 90%;
-    border-radius: 30px;
-    box-shadow: 5px 8px 5px black;
-    text-align: justify;
-    
-
-}
-
-
-
-.conteneur-commentaire img{
-    width: auto;
-    height: auto;
-    max-height: 100px;
-    max-width: 100px;
-    border-radius: 50%;
-}
-
-  .commentaire{
-    color: white
-  }  
-  
-  ***/
-/****
-  .comment-box {
-    display: flex;
-    margin-bottom: 20px;
-  }
-  
-  .user-avatar img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .comment-content {
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: column;
-    flex: 1;
-  }
-  
-  .username {
-    margin: 0;
-  }
-  
-  .star-rating {
-    margin-top: 5px;
-  }
-  
-  .star-rating input[type="radio"] {
-    display: none;
-  }
-  
-  .star-rating label {
-    font-size: 20px;
-    color: #FFD700;
-    cursor: pointer;
-  }
-  
-  .comment-text {
-    margin-top: 10px;
-  }
-  
-  .comment-date {
-    display: block;
-    font-size: 12px;
-    color: #423e3e;
-    margin-top: 5px;
-  } ****/
 
 
  
 
-  /**** suite ****/
+  /**** commentaire ****/
 
   .comment-box {
     background: url(images/la-galaxie-dans-laquelle-le-fluor-a-ete-detecte-se-trouve-a-12-milliards-d-annees-lumiere-image-d-illustration-pixabay-1636110175.jpg);
