@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid; */
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    background: url(/images/fond3.jpg);
+}
+
+#background-video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/*! HEADER STYLE START */
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: hsla(0, 0%, 51%, 0.3);
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    transition: 700ms;
+}
+
+svg {
+    width: 35px;
+    height: 45px;
+    fill: white;
+}
+
+nav {
+    z-index: 100;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    width: 30%;
+    justify-content: end;
+}
+
+.nav2 {
+    display: flex;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    font-size: 40px;
+    line-height: 1em;
+    justify-content: center;
+    top: -500%;
+    z-index: 2;
+    transition: 500ms;
+}
+
+.nav2 ul {
+    display: flex;
+    flex-flow: column;
+    list-style: none;
+    text-align: center;
+    gap: 10px;
+    width: 100%;
+    color: rgb(54, 54, 54);
+}
+
+.nav2 ul li:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+
+nav ul {
+    display: none;
+    flex-direction: row;
+    list-style: none;
+    margin-right: 25px;
+    gap: 15px;
+}
+
+nav svg {
+    width: 20px;
+}
+
+.mini-search {
+    width: 20px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+
+/* On aligne les logo au centre */
+.logo-title :first-child {
+    margin-left: 25px;
+}
+
+.logo-footer :first-child {
+    margin-left: 15px;
+}
+
+.ltitle {
+    display: none;
+    font-size: 25px;
+    color: white;
+}
+
+.head-logo {
+    flex: 1;
+    transition: transform 200ms;
+}
+
+.head-logo:hover {
+    animation: logoanim 1s infinite ease-in-out;
+}
+
+@keyframes logoanim {
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: rotate(-5deg) scale(1.10);
+    }
+
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        transform: rotate(5deg) scale(1.10);
+    }
+}
+
+.search-container {
+    display: flex;
+    flex-flow: row, nowrap;
+    justify-content: start;
+    padding-left: 25px;
+    gap: 10px;
+    width: 30%;
+}
+
+.search-icon {
+    transition: scale 200ms;
+}
+
+.search-icon:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.scroll {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.logo-scroll {
+    fill: rgb(51, 51, 51);
+    color: rgb(54, 54, 54);
+}
+
+.burger-menu {
+    width: 40px;
+    transition: scale 200ms;
+    margin-right: 25px;
+}
+
+.burger-menu:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+/*! HEADER STYLE END */
+
+main {
+    display: block;
+}
+
+/*! HERO STYLE START */
+.hero {
+    width: 100%;
+    height: 80vh;
+}
+
+.hero h1,
+.hero h2 {
+    background-color: hsla(0, 0%, 28%, 0.3);
+    backdrop-filter: blur(3.5px);
+    color: rgb(255, 255, 255);
+}
+
+.hero h1 {
+    text-align: left;
+    padding: 7px;
+    max-width: 250px;
+    position: absolute;
+    top: 150px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.hero h2 {
+    text-align: right;
+    font-style: normal;
+    position: absolute;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    max-width: 275px;
+    top: 350px;
+    right: 0px;
+    padding: 7px;
+}
+
+.img-slider-hero {
+    opacity: 0;
+    transition: 0, 5s;
+}
+
+.active-hero {
+    opacity: 1;
+}
+
+.carousel-container {
+    width: inherit;
+    position: relative;
+    width: 100%;
+}
+
+.carousel-container img {
+    object-fit: cover;
+    transition: 200ms;
+    width: 100%;
+    min-height: 500px;
+    max-height: 75vh;
+}
+
+.slide {
+    width: 100%;
+    position: absolute;
+    transition: opacity 0.5s;
+}
+
+/*! HERO STYLE END */
+
+/*! Formulaire Recherche START */
+
+.conteneur-input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 0px 0px 10px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #9696967a;
+}
+
+input {
+    width: 320px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.destination input {
+    background-image: url(/images/icon-x-win.png);
+    background-position: 97%;
+    background-repeat: no-repeat;
+    background-size: 30px;
+
+}
+
+.date input {
+    background-image: url(/images/images.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 50px;
+
+}
+
+.sejour input {
+    background-image: url(/images/icons8-planète-60.png);
+    background-position: 98%;
+    background-repeat: no-repeat;
+    background-size: 30px;
+
+}
+
+button {
+    font-size: 18px;
+    color: white;
+    background-color: darkorange;
+    height: 40px;
+    width: 200px;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*! Formulaire Recherche END */
+
+/*! SECTION CARD STYLE START */
+.section-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.conteneur-card {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    width: 346px;
+    height: 325px;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+    transition: 200ms;
+}
+
+.conteneur-card figure {
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.conteneur-card img {
+    margin-bottom: -4px;
+    transition: 200ms;
+}
+
+.conteneur-card img:hover {
+    scale: 1.2;
+}
+
+.conteneur-card h3,
+.desc {
+    padding: 2%;
+}
+
+.section-card figcaption {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.type {
+    color: rgb(108, 177, 241);
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 2%;
+}
+
+.prix {
+    font-family: 'Open Sans';
+    display: flex;
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+/*! SECTION CARD STYLE END */
+
+/*! FOOTER STYLE START */
+
+footer {
+    background-color: #292929;
+    color: aliceblue;
+    fill: rgb(255, 255, 255);
+}
+
+.c1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+}
+
+.head-logo-footer {
+    transition: transform 200ms;
+}
+
+.head-logo-footer:hover {
+    animation: logoanim 1s infinite ease-in-out;
+}
+
+.nav-footer ul {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.nav-footer {
+    width: 100%;
+}
+
+.nav-footer li {
+    list-style: none;
+    background-image: linear-gradient(#FFFFFF 0 0);
+    background-position: 0 100%;
+    /*OR bottom left*/
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition:
+        background-size 0.3s,
+        background-position 0s 0.3s;
+}
+
+.nav-footer li:hover {
+    cursor: pointer;
+    background-position: 100% 100%;
+    /*OR bottom right*/
+    background-size: 100% 2px;
+}
+
+.reseau-footer {
+    background-color: #353535;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.reseau-footer img {
+    width: 40px;
+    transition: scale 200ms;
+}
+
+.reseau-footer img:hover {
+    scale: 1.1;
+}
+
+/*! MEDIA QUERY START */
+/**MEDIA QUERY iPhone12 390x844 */
+@media screen and (min-width: 390px) {
+    .carousel-container img {
+        min-height: 650px;
+        max-height: 75vh;
+    }
+
+    .hero h2 {
+        top: 500px;
+    }
+}
+
+/**MEDIA QUERY iPad 768*1024 */
+@media screen and (min-width: 768px) {
+    .carousel-container img {
+        min-height: 780px;
+        max-height: 75vh;
+    }
+
+    .hero h1 {
+        padding: 20px;
+        max-width: 400px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+        line-height: 1em;
+        max-width: 500px;
+        top: 550px;
+        right: 0px;
+        padding: 20px;
+    }
+
+    .conteneur-card img:hover {
+        scale: 1.2;
+    }
+
+    /* .conteneur-card:hover {
+        scale: 1.2;
+    } */
+    .ltitle {
+        display: flex;
+    }
+}
+
+/**MEDIA QUERY Ipad Pro 12.9 1024*1366 */
+@media screen and (min-width: 1024px) {
+    nav ul {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+
+}
+
+
+/**MEDIA QUERY Macbook Pro 1440*900 */
+@media screen and (min-width: 1440px) {
+    .carousel-container img {
+        min-height: 500px;
+        max-height: 75vh;
+    }
+
+    .hero h1 {
+        padding: 20px;
+        max-width: 600px;
+        font-size: 50px;
+        line-height: 1em;
+        left: 100px;
+    }
+
+    .hero h2 {
+        font-size: 35px;
+        line-height: 1em;
+        max-width: 600px;
+        top: 450px;
+        right: 100px;
+        padding: 20px;
+
+    }
+}
+
+body{
+    background: url(/images/fond3.jpg);
+}
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.reservation {
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+
+table {
+    
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td {
+    vertical-align: top;
+}
+
+td:nth-child(5) {
+    text-align: right;
+}
+
+/* Media queries pour la mise en page responsive */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+}
