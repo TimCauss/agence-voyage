@@ -86,6 +86,7 @@ nav svg {
     width: 20px;
 }
 
+
 .mini-search {
     width: 20px;
 }
@@ -263,7 +264,7 @@ main {
     margin: 0px 0px 10px;
     padding: 15px;
     border-radius: 5px;
-    background-color: #9696967a;
+    background-color: #387397;
 }
 
 .conteneur-input input {
@@ -294,16 +295,16 @@ main {
 
 .sejour input {
     background-image: url(/images/icons8-planète-60.png);
-    background-position: 98%;
+    background-position: 97%;
     background-repeat: no-repeat;
     background-size: 30px;
 
 }
 
-button {
+.recherche button {
     font-size: 18px;
     color: white;
-    background-color: #387397;
+    background-color: #FE5B02;
     height: 40px;
     width: 200px;
     cursor: pointer;
@@ -328,6 +329,18 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    background-color: hsla(0, 0%, 100%, 0.3);
+    margin-top: 50px;
+}
+
+.card-title {
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    color: #ffffff;
+    font-size: xx-large;
+    text-shadow: 1px 1px #292929;
+
 }
 
 .conteneur-card {
@@ -377,16 +390,28 @@ button:hover {
     padding: 2%;
 }
 
-.prix {
+.prix-card {
     font-family: 'Open Sans';
     display: flex;
     font-size: 30px;
     position: absolute;
     right: 20px;
     bottom: 10px;
+    color: #FE5B02;
+    font-weight: bold;
 }
 
 /*! SECTION CARD STYLE END */
+
+/*! SECTION GUIDE STYLE START*/
+
+.guide-container {
+    background-image: url(/images/section-guide-bg-m.png);
+    max-height: 375px;
+    width: 375px;
+    object-fit: contain;
+}
+
 
 /*! FOOTER STYLE START */
 
@@ -512,8 +537,10 @@ footer {
 .form-sous-container {
     width: 100%;
     padding: 70px;
-    background-color: hsla(53, 6%, 32%, 0.438);
+    background-color: hsla(0, 0%, 100%, 0.3);
+    ;
 }
+
 .fmain_container {
     display: flex;
     border-radius: 10px;
@@ -544,8 +571,9 @@ footer {
 #formulaire input {
     height: 30px;
 }
+
 #formulaire label {
-    color: white;
+    color: #ffffff;
 }
 
 #formulaire input:focus {
@@ -565,15 +593,14 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 400;
-    background-color: 387397;
+    background-color: #FE5B02;
     border-radius: 5px;
     margin-top: 20px;
     border: none;
 }
 
 #formulaire button:hover {
-    transform: scale(1.2);
-    background-color: #4b93df;
+    transform: scale(1.05);
 }
 
 #formulaire button img {
