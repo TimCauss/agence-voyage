@@ -406,10 +406,35 @@ button:hover {
 /*! SECTION GUIDE STYLE START*/
 
 .guide-container {
-    background-image: url(/images/section-guide-bg-m.png);
-    max-height: 375px;
-    width: 375px;
-    object-fit: contain;
+    background-image: url(/images/section-guide-bg.png);
+    background-position: 75% 75%;
+    background-repeat: no-repeat;
+    min-height: 375px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #463F38;
+}
+
+.guide-txt-presentation {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    width: 100%;
+    text-align: center;
+    margin: 50px 5%;
+    padding: 50px;
+    background-color: #FFFFFF;
+}
+
+.guide-txt-presentation button {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 5px 50px;
+    background-color: #94B3DA;
+    border: none;
+    color: #FFFFFF;
 }
 
 
@@ -660,6 +685,32 @@ footer {
         width: 50%;
         display: block;
     }
+
+    /** SECTION GUIDE STYLE START*/
+
+.guide-container {
+    background-size: cover;
+    min-height: 375px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    color: #463F38;
+}
+
+.guide-txt-presentation {
+    max-width: 50%;
+    margin: 50px 5%;
+}
+
+.guide-txt-presentation button {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 5px 50px;
+    background-color: #94B3DA;
+    border: none;
+    color: #FFFFFF;
+}
 }
 
 /**MEDIA QUERY Ipad Pro 12.9 1024*1366 */
@@ -672,6 +723,10 @@ footer {
         display: none;
     }
 
+    .guide-txt-presentation {
+        max-width: 30%;
+        margin: 50px 5%;
+    }
 
 }
 
