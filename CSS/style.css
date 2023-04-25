@@ -439,6 +439,11 @@ button:hover {
     transition: 200ms;
 }
 
+.guide-title-hidden{
+    text-decoration: underline 3px #FE5B02;
+    font-size: 30px;
+    margin-top: -20px;
+}
 
 /*! FOOTER STYLE START */
 
@@ -454,7 +459,7 @@ footer {
     gap: 20px;
     align-items: center;
     justify-content: center;
-    margin: 20px 0 20px 0;
+    margin: 0 0 20px 0;
     padding-top: 20px;
     width: 100%;
 }
