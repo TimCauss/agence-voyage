@@ -183,6 +183,7 @@ nav svg {
 
 main {
     display: block;
+    background-color: hsla(0, 0%, 100%, 0.3);
 }
 
 /*! HERO STYLE START */
@@ -329,7 +330,6 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: hsla(0, 0%, 100%, 0.3);
     margin-top: 50px;
 }
 
@@ -409,6 +409,7 @@ button:hover {
     background-image: url(/images/section-guide-bg.png);
     background-position: 75% 75%;
     background-repeat: no-repeat;
+    margin-top: 50px;
     min-height: 375px;
     width: 100%;
     display: flex;
@@ -432,9 +433,10 @@ button:hover {
     font-size: 20px;
     margin-top: 30px;
     padding: 5px 50px;
-    background-color: #94B3DA;
+    background-color: #FE5B02;
     border: none;
     color: #FFFFFF;
+    transition: 200ms;
 }
 
 
@@ -707,7 +709,7 @@ footer {
     font-size: 20px;
     margin-top: 30px;
     padding: 5px 50px;
-    background-color: #94B3DA;
+    background-color: #FE5B02;
     border: none;
     color: #FFFFFF;
 }
