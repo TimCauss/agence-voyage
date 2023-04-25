@@ -31,7 +31,7 @@ body {
 .conteneur-card h3, .desc, .type{
     padding: 2%;
 }
-.prix{
+.prix-card{
     font-family: 'Open Sans';
     display: flex;
     font-size: 30px;
@@ -39,14 +39,3 @@ body {
     right: 20px;
     bottom: 10px;
 }
-#background-video {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-    }

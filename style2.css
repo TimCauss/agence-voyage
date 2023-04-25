@@ -166,12 +166,12 @@ body {
 
 /* Slider */
 .conteneur-slider {
-    height: 83vh;
+    height: 70vh;
     position: relative;
 }
 
 .conteneur-slider img {
-    object-fit: contain;
+    object-fit: cover;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -199,26 +199,56 @@ body {
 
 .titre-planet {
     font-family: 'Star Wars', sans-serif;
-    color: ;
     font-size: 4em;
-    background-color: ;
+    
 }
 
 .liste {
     margin: 0 10%;
-    color: ;
     font-size: 1.2em;
 }
-
-.prix {
-    font-size: 50px;
-    padding: 2% 3%;
-    border-radius: 20%;
-    bottom: 30%;
-    right: 15%;
-    background-color: rgba(555, 555, 555, 1);
+.conteneur-prix{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    
+    
 }
-
+.prix {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 2%;
+    margin-bottom: %;
+    width: 70%;
+}
+.prix p:nth-child(1){
+    font-size: 10px;
+}
+.prix span{
+    font-size: 30px;
+    color: #FE5B02; 
+}
+.bouton-prix{
+    padding-top: 15px;
+    text-align: center;
+    width: 30%;
+}
+.conteneur-prix button{
+    padding: 10px;
+    background-color: #FE5B02;
+    border: none;
+    color: white;   
+}
+.conteneur-prix button:hover{
+    scale: 1.1;
+}
 .description {
     margin:5% 0;
     font-size: 18px;
@@ -241,8 +271,9 @@ body {
 
 }
 
+
 .imagegif {
-    padding: 2%;
+    padding: 2% 10%;
     align-items: center;
     justify-content: center;
 }
@@ -261,7 +292,8 @@ body {
 /***** formulaire *****/
 
 .recherche{
-    margin-left: 25%;
+    width: 100%;
+    align-items: center;
     
 }
 .conteneur-input {
@@ -273,7 +305,7 @@ body {
     margin-bottom: 50px;
 }
 
-input {
+.conteneur-input input {
     width: 320px;
     height: 30px;
     border-radius: 5px;
@@ -291,10 +323,10 @@ input {
     background-size: 50px;
 }
 
-button {
+.recherche button{
     font-size: 18px;
     color: white;
-    background-color: darkorange;
+    background-color: #FE5B02;
     height: 40px;
     width: 200px;
     cursor: pointer;
@@ -365,9 +397,6 @@ tr{
   border: 1px solid black;
   vertical-align: middle;
 }
-tr td:nth-child(2){
-    
-}
 tr td:nth-child(3){
     width: 10%;
 }
@@ -394,7 +423,7 @@ table td{
 
 .calendar-header {
     display: inline-block;
-    width: 100%;
+    width: 600px;
 }
 
 .jour {
@@ -415,7 +444,7 @@ table td{
 .calendar-body {
     display: flex;
     flex-direction: column;
-    height: 660px;
+    height: 840px;
     width: 100%;
     background-color: rgb(187, 181, 181);
     align-items: stretch;
@@ -749,7 +778,32 @@ footer {
     .commentaire{
         margin: 2% 15%;
     }
-}
+    .conteneur-prix{
+        display: flex;
+        z-index: 0;
+        position: absolute;
+        left: 68%;
+        width: 320px;
+        height: 160px;
+        top: 715px;
+
+    }
+    .prix {
+       justify-content: center;  
+    }
+    .prix p:nth-child(1){
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .prix span{
+        font-size: 48px;
+        color: #FE5B02;
+    }
+    .bouton-prix{
+        padding-top: 60px;
+        width: 30%;
+        
+    }
 
 /**MEDIA QUERY Ipad Pro 12.9 1024*1366 */
 @media screen and (min-width: 1024px) {
@@ -772,6 +826,10 @@ footer {
     .reservation{
         flex-wrap: nowrap;
         
+    }
+    .recherche{
+        width: 30%;
+        justify-content: center;
     }
 }
 
