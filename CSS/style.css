@@ -575,7 +575,6 @@ footer {
 
 .fmain_container {
     display: flex;
-    border-radius: 10px;
     overflow: hidden;
     flex-direction: row;
     width: 100%;
@@ -591,6 +590,11 @@ footer {
 .form_container2 {
     width: 50%;
     display: none;
+    border: none;
+    border-radius: none;
+}
+.form_container2 iframe{
+    border: none;
 }
 
 .inputFalse {
@@ -602,6 +606,15 @@ footer {
 
 #formulaire input {
     height: 30px;
+    border-radius: 5px;
+    border:0;
+    outline: 0.2px solid grey;
+}
+
+#formulaire textarea {
+    border-radius: 5px;
+    border:0;
+    outline: 0.2px solid grey;
 }
 
 #formulaire label {
@@ -620,15 +633,22 @@ footer {
     border-bottom: 1px solid #007aff;
 }
 
+.contact-button {
+    display: flex;
+    justify-content: center;
+}
+
 #formulaire button {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: 400;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: bold;
     background-color: #FE5B02;
-    border-radius: 5px;
     margin-top: 20px;
+    padding: 5px 50px;
     border: none;
+    border-radius: 5px;
+    transition: 200ms        ;
 }
 
 #formulaire button:hover {
