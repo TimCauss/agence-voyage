@@ -686,9 +686,18 @@ footer {
 .guide-articles {
     display: flex;
     justify-content: center;
-    flex-flow: wrap;
-    gap: 60px;
+    align-items: center;
+    flex-wrap: wrap;
     padding-bottom: 60px;
+    gap: 30px;
+}
+
+.gd-article-container {
+    min-width: 375px;
+    max-width: 394px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+/*     flex: 1 0 100%; */
 }
 
 .main-guide h2 {
@@ -702,14 +711,12 @@ footer {
     padding: 25px;
 }
 
-.art-container {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+.art-container{
+    width: 100%;
 }
 
 .art-container figure {
-    width: 100%
+    width: 100%;
 }
 
 .art-container img {
@@ -723,8 +730,9 @@ footer {
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
+    width:100%;
     line-height: 20px;
-    padding: 0px 100px;
+    padding: 0px 50px;
     color: #463F38;
 }
 
@@ -826,6 +834,11 @@ footer {
         border: none;
         color: #FFFFFF;
     }
+
+    .guide-header {
+        background-image: url(/images/guide-landscape-header-XL.png);
+        height: 356px;
+    }
 }
 
 /**MEDIA QUERY Ipad Pro 12.9 1024*1366 */
@@ -842,7 +855,10 @@ footer {
         max-width: 30%;
         margin: 50px 5%;
     }
-
+    .guide-header {
+        background-image: url(/images/guide-landscape-header-XL.png);
+        background-position-y: -100px;
+    }
 }
 
 
@@ -868,6 +884,9 @@ footer {
         top: 450px;
         right: 100px;
         padding: 20px;
-
+    }
+    .guide-header {
+        background-position-y: -300px;
+        background-image: url(/images/guide-landscape-header-XL.png);
     }
 }
