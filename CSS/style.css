@@ -6,6 +6,10 @@
     /* outline: 1px solid; */
 }
 
+html {
+    scroll-behavior: smooth !important;
+}
+
 body {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
@@ -571,7 +575,7 @@ footer {
     display: none;
 }
 
-.footer-right button{
+.footer-right button {
     width: 70px;
     height: 30px;
     background-color: white;
@@ -968,10 +972,12 @@ footer {
         width: 100%;
         padding: 0 50px;
     }
+
     .ft-search {
         display: none;
     }
-    .footer-right{
+
+    .footer-right {
         display: flex;
     }
 
@@ -1012,6 +1018,7 @@ footer {
         background-image: url(/images/guide-landscape-header-XL.png);
         background-position-y: -100px;
     }
+
     .ft-search {
         display: block;
     }
@@ -1046,6 +1053,7 @@ footer {
         background-position-y: -300px;
         background-image: url(/images/guide-landscape-header-XL.png);
     }
+
     .ft-ct2 {
         padding: 0 150px;
     }
