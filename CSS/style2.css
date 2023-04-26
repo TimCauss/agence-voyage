@@ -278,8 +278,6 @@ ul{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-
-
 }
 
 .description p {
@@ -290,13 +288,15 @@ ul{
 
 .description img {
     height: 20vh;
-
 }
 
 
 .imagegif {
-    padding: 2% ;
-
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 20px;
+    padding-bottom: 30px;
 }
 
 /* reservation*/
@@ -840,6 +840,16 @@ footer {
 
 }
 
+/** MEDIA QUERY 600* */
+@media screen and (min-width: 600px) {
+.imagegif {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+
 /**MEDIA QUERY iPad 768*1024 */
 @media screen and (min-width: 768px) {
     .carousel-container img {
@@ -880,6 +890,7 @@ footer {
 
     .description {
         margin: 2% 5%;
+        flex-wrap: nowrap;
     }
 
     .reservation {
@@ -939,9 +950,12 @@ footer {
         width: 100%;
         bottom: 0;
         padding: 20px;
-
-
-
+    }
+    .imagegif {
+    padding: 2% ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     }
     .titre-planet{
         position: absolute;
@@ -957,10 +971,6 @@ footer {
 
         .burger-menu {
             display: none;
-        }
-
-        .description {
-            flex-wrap: nowrap;
         }
 
         .conteneur-tableau {
