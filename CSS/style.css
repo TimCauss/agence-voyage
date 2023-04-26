@@ -397,7 +397,7 @@ button:hover {
     margin: 50px;
     border-radius: 15px 15px 0 0;
     position: relative;
-    transition: 200ms;
+    transition: 1000ms;
 }
 
 .conteneur-card figure {
@@ -407,7 +407,7 @@ button:hover {
 
 .conteneur-card img {
     margin-bottom: -4px;
-    transition: 200ms;
+    transition: 700ms;
 }
 
 .conteneur-card img:hover {
