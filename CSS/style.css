@@ -85,6 +85,39 @@ nav ul {
 nav ul a {
     text-decoration: none;
     color: white;
+    cursor: default;
+}
+
+nav ul a:hover {
+    color: #FE5B02;
+}
+
+.nav1 .dot {
+    width: 6px;
+    height: 6px;
+    background: #FE5B02;
+    border-radius: 50%;
+    opacity: 0;
+    translate: -263px 28px;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav1 :nth-child(1):hover~.dot {
+    translate: -263px 28px;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.nav1 :nth-child(2):hover~.dot {
+    translate: -183px 28px;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.nav1 :nth-child(3):hover~.dot {
+    translate: -80px 28px;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
 }
 
 nav svg {
@@ -442,6 +475,12 @@ button:hover {
     border: none;
     color: #FFFFFF;
     transition: 200ms;
+    cursor: pointer;
+}
+
+.guide a {
+    text-decoration: none;
+    color: white;
 }
 
 .guide-title-hidden {
@@ -464,7 +503,6 @@ footer {
     gap: 20px;
     align-items: center;
     justify-content: center;
-    margin: 0 0 20px 0;
     padding-top: 20px;
     width: 100%;
 }
@@ -512,6 +550,19 @@ footer {
     background-size: 100% 2px;
 }
 
+.mini-contact {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    gap:12px;
+}
+
+.mini-contact h6{
+    margin: 10px;
+    font-size: 15px;
+}
+
 .reseau-footer {
     background-color: #353535;
     padding: 20px;
@@ -519,6 +570,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 20px;
+    width: 100%;
 }
 
 .reseau-footer img {
@@ -829,8 +881,6 @@ footer {
         display: block;
     }
 
-    /** SECTION GUIDE STYLE START*/
-
     .guide-container {
         background-size: cover;
         min-height: 375px;
@@ -866,6 +916,36 @@ footer {
 
     .main-guide h2 {
         font-size: 28px;
+    }
+
+    /**footer*/
+
+    .nav-footer {
+        width: 50%;
+    }
+
+    .nav-footer ul {
+        margin-left: 20px;
+        text-align: left;
+    }
+
+    .logo-footer {
+        align-self: center;
+    }
+    .ft-ct2 .guide-title-hidden{
+        display: none;
+    }
+    .ft-ct2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .mini-contact {
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        gap:12px;
     }
 }
 
