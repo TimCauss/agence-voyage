@@ -69,4 +69,10 @@
         flex-flow: row nowrap;
         justify-content: space-between;
     }
+    .article-bdy h3 {
+        text-align: left;
+    }
+    .article-bdy p {
+        text-align: left;
+    }
 }
