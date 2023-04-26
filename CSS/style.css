@@ -702,7 +702,15 @@ footer {
     max-width: 394px;
     flex-wrap: wrap;
     margin-top: 20px;
-    /*     flex: 1 0 100%; */
+    transition: 200ms;
+}
+
+.gd-article-container:hover {
+    scale: 1.03;
+}
+
+.gd-article-container a {
+    text-decoration: none;
 }
 
 .main-guide h2 {
