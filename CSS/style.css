@@ -141,7 +141,7 @@ nav svg {
 }
 
 .logo-footer :first-child {
-    margin-left: 15px;
+    margin-left: -5px;
 }
 
 .ltitle {
@@ -555,12 +555,35 @@ footer {
     text-align: center;
     flex-direction: column;
     display: flex;
-    gap:12px;
+    gap: 12px;
 }
 
-.mini-contact h6{
+.mini-contact h6 {
     margin: 10px;
     font-size: 15px;
+}
+
+.footer-right {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    display: none;
+}
+
+.footer-right button{
+    width: 70px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.footer-right input {
+    height: 30px;
+    width: 215px;
+    border-radius: 5px;
 }
 
 .reseau-footer {
@@ -921,7 +944,9 @@ footer {
     /**footer*/
 
     .nav-footer {
-        width: 50%;
+        width: 33%;
+        display: flex;
+        align-items: center;
     }
 
     .nav-footer ul {
@@ -932,20 +957,39 @@ footer {
     .logo-footer {
         align-self: center;
     }
-    .ft-ct2 .guide-title-hidden{
+
+    .ft-ct2 .guide-title-hidden {
         display: none;
     }
-    .ft-ct2{
+
+    .ft-ct2 {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-    }
-    .mini-contact {
         width: 100%;
+        padding: 0 50px;
+    }
+    .ft-search {
+        display: none;
+    }
+    .footer-right{
+        display: flex;
+    }
+
+    .mini-contact {
+        width: 33%;
         text-align: center;
         flex-direction: column;
         display: flex;
-        gap:12px;
+        gap: 12px;
+    }
+
+    .mini-contact h6 {
+        margin: 0;
+        line-height: 30px;
+    }
+
+    .mini-contact p {
+        line-height: 25px;
     }
 }
 
@@ -967,6 +1011,9 @@ footer {
     .guide-header {
         background-image: url(/images/guide-landscape-header-XL.png);
         background-position-y: -100px;
+    }
+    .ft-search {
+        display: block;
     }
 }
 
@@ -998,5 +1045,8 @@ footer {
     .guide-header {
         background-position-y: -300px;
         background-image: url(/images/guide-landscape-header-XL.png);
+    }
+    .ft-ct2 {
+        padding: 0 150px;
     }
 }
