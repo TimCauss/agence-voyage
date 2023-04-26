@@ -618,11 +618,15 @@ table td {
     font-size: 12px;
     color: #777;
   }
-  
-
+  .contenaire-vos-com{
+    width: 100%;
+  }
+  .contenue-pub{
+    display: none;
+  }
   .vos-com{
     align-self: flex-start;
-    width: 45%;
+    width: 95%;
     padding-left: 5%;
   }
   @media (max-width: 375px){
@@ -962,6 +966,20 @@ footer {
         top:15px;
         left: 15px;
     }
+    .contenaire-vos-com{
+        width: 100%;
+        margin-bottom: 2%;
+        display: flex;
+      }
+      .contenue-pub{
+         display: block;
+         margin-left: 10%;
+      }
+      .vos-com{
+        align-self: flex-start;
+        width: 45%;
+        padding-left: 5%;
+      }
 }
     /**MEDIA QUERY Ipad Pro 12.9 1024*1366 */
     @media screen and (min-width: 1024px) {
@@ -1000,6 +1018,10 @@ footer {
         .info_rapide{
             height: 400px;
         }
+        .contenue-pub{
+            display: block;
+            margin-left: 15%;
+         }
     }
 
     /**MEDIA QUERY Macbook Pro 1440*900 */
@@ -1039,5 +1061,12 @@ footer {
             margin: 2% 15%;
         }
 
-        
+        .contenue-com{
+            width: 70%;
+            margin: 2% 15%;
+        }
+        .contenue-pub{
+            display: block;
+            margin-left: 20%;
+         }
     }
