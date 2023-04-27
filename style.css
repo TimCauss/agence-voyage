@@ -362,7 +362,7 @@ nav svg {
   
   .star-rating {
     display: flex;
-    align-items: center;
+    
   }
   
   .star-rating input[type="radio"] {
