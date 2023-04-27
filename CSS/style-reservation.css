@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid; */
+}
+
+
+/***reservation****/
+
+body{
+     background: url(../images/fond3.jpg); 
+     background-repeat: no-repeat ;
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     overflow: hidden;
+     box-sizing: border-box;
+     font-family: 'Open Sans', sans-serif;
+}
+
+
+.mes-reservations{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    padding-top: 3%;
+    background: #FFFFFF;
+    opacity: 0.6;
+    margin-top: 10%;
+}
+
+.reservation {
+    color: black;
+    text-align: center;
+    font-size: 45px;
+    
+    
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: auto;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.resa:hover, .resa:hover a, .resa:hover .credit {
+    background-color: black;
+    color: #FFFFFF;
+    fill: #ffffff
+}
+
+td a{
+    text-decoration: none;
+    color: black;
+}
+
+
+th {
+    background-color: #f2f2f2;
+}
+
+td {
+    vertical-align: top;
+}
+
+td:nth-child(5) {
+    text-align: right;
+}
+.credit{
+
+    font-size: 2px;
+}
+.credit {
+    fill: black;
+    height: 15px;
+    width: auto;
+ }
+
+/* Media queries pour la mise en page responsive */
+@media screen and (max-width: 768px) {
+    .mes-reservations{
+        margin-top: 16%;}
+    .reservation {
+        font-size: 24px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+   
+    .reservation{
+        font-size: 20px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 6px;
+
+    }
+}
+
