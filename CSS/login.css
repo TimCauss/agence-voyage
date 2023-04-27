@@ -1,4 +1,5 @@
 body {
+    overflow: hidden;
     background-image: url(/images/login-background-XL.png);
 }
 
@@ -8,6 +9,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .login-form {
