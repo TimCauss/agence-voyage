@@ -97,3 +97,7 @@ p:hover {
 .login-active {
     translate: -550% 5%;
 }
+
+.logo-title :first-child {
+    margin-left: 0px;
+  }
