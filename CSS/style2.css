@@ -168,6 +168,7 @@ body {
 .conteneur-slider {
     height: 70vh;
     position: relative;
+    width: 100%;
 }
 
 .conteneur-slider img {
@@ -415,14 +416,11 @@ table {
     font-size: 14px;
 }
 
-.table thead {
-    display: flex;
-    justify-content: center;
-    vertical-align: middle;
+thead{
     background-color: #387397;
-    padding: 10px;
-    width: 100%;
-
+    color: white;
+    height: 40px;
+    text-align: center;
 }
 
 tr {
@@ -1006,6 +1004,19 @@ footer {
         .contenue-pub{
             padding: 2%;
         }
+        .conteneur-slider {
+            height: 70vh;
+            position: relative;
+            width: 90%;
+            margin:  0 5%;
+        }
+        .conteneur-slider img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            position: absolute;  
+        }
+        
     }
 
     /**MEDIA QUERY Ipad Pro 12.9 1024*1366 */
@@ -1052,7 +1063,23 @@ footer {
             display: block;
             margin-left: 15%;
         }
+        .conteneur-slider {
+            height: 70vh;
+            position: relative;
+            width: 90%;
+            margin:  0 5%;
+        }
+
+        .conteneur-slider img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            position: absolute;  
+        }
+        
+        
     }
+
 
     /**MEDIA QUERY Macbook Pro 1440*900 */
     @media screen and (min-width: 1440px) {
@@ -1100,4 +1127,18 @@ footer {
             display: block;
             margin-left: 20%;
         }
+        .conteneur-slider {
+            height: 70vh;
+            position: relative;
+            width: 70%;
+            margin:  0 15%;
+        }
+
+        .conteneur-slider img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            position: absolute;  
+        }
+        
     }
