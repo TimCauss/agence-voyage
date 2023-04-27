@@ -193,6 +193,7 @@ nav svg {
 }
 
 .search-icon {
+    width: 25px;
     transition: scale 200ms;
 }
 
