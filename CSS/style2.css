@@ -416,14 +416,11 @@ table {
     font-size: 14px;
 }
 
-.table thead {
-    display: flex;
-    justify-content: center;
-    vertical-align: middle;
+thead{
     background-color: #387397;
-    padding: 10px;
-    width: 100%;
-
+    color: white;
+    height: 40px;
+    text-align: center;
 }
 
 tr {
