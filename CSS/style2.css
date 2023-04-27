@@ -510,15 +510,26 @@ table td {
 
 .calendar-body .voyage-date {
     background-color: white;
-    transition: 200ms;
+    display: flex;
+    flex-direction: column;
+    transition: 600ms;
 }
 
 .calendar-body .voyage-date:hover {
     background-color: white;
-    scale: 1.5;
-    border: darkgoldenrod solid 1px;
+    scale: 2;
+    border: #FE5B02 solid 1px;
+    
 }
-
+.calendar-hover {
+    opacity: 0;
+    font-size: 12px;
+}
+.voyage-date:hover .calendar-hover{
+    opacity: 1;
+    transition: 600ms;
+    font-size: 12px;
+}
 .calendar-body .prix-calendar {
     display: flex;
     border: 0px;
@@ -529,13 +540,21 @@ table td {
     height: 50%;
 
 }
-
+.voyage-date:hover .offre{
+    opacity: 1;
+    transition: 600ms;
+}
+#Red{
+    color: #FE5B02;
+}
 .calendar-body .offre {
     height: 5%;
     border: 0;
     font-size: 25px;
     padding-bottom: 15PX;
-
+    padding-left: 5px;
+    color: #FE5B02;
+    opacity: 0;
 }
 
 
@@ -732,7 +751,7 @@ input[type="submit"] {
 /***/
 .section-com {
     display: flex;
-    flex-direction: column;
+    flex-direction: ;
     align-items: center;
     width: 100%;
 }
@@ -981,6 +1000,12 @@ footer {
             top: 15px;
             left: 15px;
         }
+        .contenaire-vos-com{
+            display: flex;
+        }
+        .contenue-pub{
+            padding: 2%;
+        }
     }
 
     /**MEDIA QUERY Ipad Pro 12.9 1024*1366 */
@@ -1022,7 +1047,7 @@ footer {
         .info_rapide {
             height: 400px;
         }
-
+        
         .contenue-pub {
             display: block;
             margin-left: 15%;
