@@ -3,14 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth !important;
+}
 
-/* Header*/
+/*! HEADER STYLE START */
 header {
+    
     display: flex;
     position: fixed;
+    top: 0;
     width: 100%;
     height: 60px;
-    background-color: hsla(0, 0%, 51%, 0.3);
+    background-color: hsla(330, 1%, 65%, 0.096);
     justify-content: space-between;
     align-items: center;
     z-index: 2;
@@ -32,6 +37,7 @@ nav {
     font-size: 20px;
     width: 30%;
     justify-content: end;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .nav2 {
@@ -70,9 +76,48 @@ nav ul {
     gap: 15px;
 }
 
+nav ul a {
+    text-decoration: none;
+    color: white;
+    cursor: default;
+}
+
+nav ul a:hover {
+    color: #FE5B02;
+}
+
+.nav1 .dot {
+    width: 6px;
+    height: 6px;
+    background: #FE5B02;
+    border-radius: 50%;
+    opacity: 0;
+    translate: -263px 28px;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav1 :nth-child(1):hover~.dot {
+    translate: -263px 28px;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.nav1 :nth-child(2):hover~.dot {
+    translate: -183px 28px;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.nav1 :nth-child(3):hover~.dot {
+    translate: -80px 28px;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
 nav svg {
     width: 20px;
 }
+
 
 .mini-search {
     width: 20px;
@@ -81,6 +126,16 @@ nav svg {
 .logo-title {
     display: flex;
     align-items: center;
+}
+
+
+/* On aligne les logo au centre */
+.logo-title :first-child {
+    margin-left: 25px;
+}
+
+.logo-footer :first-child {
+    margin-left: -5px;
 }
 
 .ltitle {
@@ -128,6 +183,7 @@ nav svg {
 }
 
 .search-icon {
+    width: 25px;
     transition: scale 200ms;
 }
 
@@ -156,6 +212,12 @@ nav svg {
     scale: 1.1;
 }
 
+/*! HEADER STYLE END */
+
+main {
+    display: block;
+    background-color: hsla(0, 0%, 100%, 0.3);
+}
 body {
     background-image: url(../images/fond3.jpg);
     background-repeat: no-repeat;
@@ -212,7 +274,7 @@ body {
     margin-left: 10%;
 }
 
-ul {
+article ul {
     font-weight: bold;
 }
 
@@ -781,11 +843,13 @@ input[type="submit"] {
     background-color: lightgray;
 }
 
-/** Footer **/
+/*! FOOTER STYLE START */
+
 footer {
     background-color: #292929;
     color: aliceblue;
     fill: rgb(255, 255, 255);
+    overflow: hidden;
 }
 
 .c1 {
@@ -794,12 +858,11 @@ footer {
     gap: 20px;
     align-items: center;
     justify-content: center;
-    margin: 20px 0 20px 0;
+    padding-top: 20px;
     width: 100%;
 }
 
 .logo-footer {
-    padding-top: 20px;
     display: flex;
     align-items: center;
 }
@@ -842,6 +905,42 @@ footer {
     background-size: 100% 2px;
 }
 
+.mini-contact {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    gap: 12px;
+}
+
+.mini-contact h6 {
+    margin: 10px;
+    font-size: 15px;
+}
+
+.footer-right {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    display: none;
+}
+
+.footer-right button {
+    width: 70px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.footer-right input {
+    height: 30px;
+    width: 215px;
+    border-radius: 5px;
+}
+
 .reseau-footer {
     background-color: #353535;
     padding: 20px;
@@ -849,6 +948,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 20px;
+    width: 100%;
 }
 
 .reseau-footer img {
@@ -859,7 +959,6 @@ footer {
 .reseau-footer img:hover {
     scale: 1.1;
 }
-
 /*! MEDIA QUERY START */
 /**MEDIA QUERY iPhone12 390x844 */
 @media screen and (min-width: 390px) {
@@ -1017,7 +1116,58 @@ footer {
             width: 100%;
             position: absolute;  
         }
-        
+        /**footer*/
+
+    .nav-footer {
+        width: 33%;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-footer ul {
+        margin-left: 20px;
+        text-align: left;
+    }
+
+    .logo-footer {
+        align-self: center;
+    }
+
+    .ft-ct2 .guide-title-hidden {
+        display: none;
+    }
+
+    .ft-ct2 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 0 50px;
+    }
+
+    .ft-search {
+        display: none;
+    }
+
+    .footer-right {
+        display: flex;
+    }
+
+    .mini-contact {
+        width: 33%;
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        gap: 12px;
+    }
+
+    .mini-contact h6 {
+        margin: 0;
+        line-height: 30px;
+    }
+
+    .mini-contact p {
+        line-height: 25px;
+    }
     }
 
     /**MEDIA QUERY Ipad Pro 12.9 1024*1366 */
@@ -1025,7 +1175,7 @@ footer {
         nav ul {
             display: flex;
         }
-
+    
         .burger-menu {
             display: none;
         }
@@ -1078,7 +1228,9 @@ footer {
             position: absolute;  
         }
         
-        
+        .ft-search {
+            display: block;
+        }
     }
 
 
@@ -1141,5 +1293,7 @@ footer {
             width: 100%;
             position: absolute;  
         }
-        
+        .ft-ct2 {
+            padding: 0 150px;
+        }
     }
