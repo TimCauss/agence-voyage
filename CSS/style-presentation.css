@@ -175,7 +175,7 @@ img {
 .wrapper {
     display: flex;
     height: 100%;
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
     perspective: 450px;
     animation-delay: 10s;
