@@ -902,8 +902,9 @@ footer {
     .ltitle {
         display: flex;
     }
-
-
+    .logo-title :first-child {
+        margin-left: 25px;
+    }
     .form_container1 {
         width: 50%;
     }
