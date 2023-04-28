@@ -840,7 +840,7 @@ input[type="submit"] {
 .commentaire p {
     margin: 0;
     padding: 10px;
-    background-color: lightgray;
+    background-color: rgb(135, 166, 223);
 }
 
 /*! FOOTER STYLE START */
