@@ -13,7 +13,7 @@ html {
 body {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    background-image: url(/images/fond3.jpg);
+    background-image: url(../images/fond3.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -140,10 +140,6 @@ nav svg {
 }
 
 
-/* On aligne les logo au centre */
-.logo-title :first-child {
-    margin-left: 25px;
-}
 
 .logo-footer :first-child {
     margin-left: -5px;
@@ -162,6 +158,7 @@ nav svg {
 
 .head-logo:hover {
     animation: logoanim 1s infinite ease-in-out;
+
 }
 
 @keyframes logoanim {
@@ -323,7 +320,7 @@ main {
 }
 
 .destination input {
-    background-image: url(/images/icon-x-win.png);
+    background-image: url(../images/icon-x-win.png);
     background-position: 97%;
     background-repeat: no-repeat;
     background-size: 30px;
@@ -331,7 +328,7 @@ main {
 }
 
 .date input {
-    background-image: url(/images/images.png);
+    background-image: url(../images/images.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: 50px;
@@ -339,7 +336,7 @@ main {
 }
 
 .sejour input {
-    background-image: url(/images/icons8-planète-60.png);
+    background-image: url(../images/icons8-planète-60.png);
     background-position: 97%;
     background-repeat: no-repeat;
     background-size: 30px;
@@ -450,7 +447,7 @@ button:hover {
 /*! SECTION GUIDE STYLE START*/
 
 .guide-container {
-    background-image: url(/images/section-guide-bg.png);
+    background-image: url(../images/section-guide-bg.png);
     background-position: 75% 75%;
     background-repeat: no-repeat;
     margin-top: 50px;
@@ -517,6 +514,10 @@ footer {
 .logo-footer {
     display: flex;
     align-items: center;
+}
+
+.logo-footer:first-child {
+    margin-left: 20px;
 }
 
 .head-logo-footer {
@@ -665,7 +666,7 @@ footer {
     overflow: hidden;
     flex-direction: row;
     width: 100%;
-    background-color: #387397;
+    background-color: #195a8370;
 }
 
 .form_container1 {
@@ -769,7 +770,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: end;
-    background-image: url(/images/guide-landscape-header.png);
+    background-image: url(../images/guide-landscape-header.png);
     height: 256px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -901,7 +902,9 @@ footer {
     .ltitle {
         display: flex;
     }
-
+    .logo-title :first-child {
+        margin-left: 25px;
+    }
     .form_container1 {
         width: 50%;
     }
@@ -936,7 +939,7 @@ footer {
     }
 
     .guide-header {
-        background-image: url(/images/guide-landscape-header-XL.png);
+        background-image: url(../images/guide-landscape-header-XL.png);
         height: 356px;
     }
 
@@ -1018,7 +1021,7 @@ footer {
     }
 
     .guide-header {
-        background-image: url(/images/guide-landscape-header-XL.png);
+        background-image: url(../images/guide-landscape-header-XL.png);
         background-position-y: -100px;
     }
 
@@ -1054,7 +1057,7 @@ footer {
 
     .guide-header {
         background-position-y: -300px;
-        background-image: url(/images/guide-landscape-header-XL.png);
+        background-image: url(../images/guide-landscape-header-XL.png);
     }
 
     .ft-ct2 {

@@ -219,7 +219,7 @@ main {
     background-color: hsla(0, 0%, 100%, 0.3);
 }
 body {
-    background-image: url(/images/fond3.jpg);
+    background-image: url(../images/fond3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -404,7 +404,7 @@ article ul {
 }
 
 .destination input {
-    background-image: url(image/-recherche-icône-vecteur-loupe.jpg);
+    background-image: url(../image/-recherche-icône-vecteur-loupe.jpg);
     background-position: right;
     background-repeat: no-repeat;
     background-size: 50px;
@@ -812,7 +812,7 @@ input[type="submit"] {
 /***/
 .section-com {
     display: flex;
-    flex-direction: ;
+    
     align-items: center;
     width: 100%;
 }
@@ -841,7 +841,7 @@ input[type="submit"] {
 .commentaire p {
     margin: 0;
     padding: 10px;
-    background-color: lightgray;
+    background-color: rgb(135, 166, 223);
 }
 
 /*! FOOTER STYLE START */
@@ -983,6 +983,7 @@ footer {
         justify-content: space-around;
         gap: 20px;
     }
+}
 
     /**MEDIA QUERY iPad 768*1024 */
     @media screen and (min-width: 768px) {

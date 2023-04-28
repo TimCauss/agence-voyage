@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="/CSS/style2.css" <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="CSS/style2.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +28,10 @@
     </div>
     <div class="logo-title">
       <h4 class="ltitle">Wookiees</h4>
+      <div onmouseover="playAudio()">
+        <audio id="audioPlayer">
+          <source src="video/Sound_Effects_Chewbacca.mp3" type="audio/mpeg">
+        </audio>
       <svg class="svg-icon head-logo" width="313" height="401" viewBox="0 0 313 401" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <path
@@ -64,6 +69,7 @@
         <path
           d="M86.3709 275.124C78.5968 283.389 75.8144 289.526 75.8963 298.282C75.8963 305.32 78.5149 310.312 86.3709 318.332C97.6639 329.87 101.674 339.772 101.183 355.075L100.937 364.322L103.556 361.785C109.53 355.975 113.376 343.536 112.476 332.898L111.985 327.17L113.949 330.361C115.094 332.161 116.977 336.744 118.286 340.59C120.414 347.055 120.577 348.61 120.577 360.312C120.577 374.388 119.432 380.116 114.031 393.7L111.248 400.82L115.749 395.91C121.232 390.018 128.27 379.625 131.216 373.242C133.916 367.268 135.88 357.939 135.225 353.602L134.816 350.083L136.453 351.965C139.808 355.811 141.69 362.604 141.772 371.442C141.772 376.024 142.099 379.625 142.427 379.461C143.736 378.643 147.991 366.532 148.892 361.212C151.265 346.892 144.391 331.998 130.479 321.441C120.823 314.158 112.967 304.829 109.53 296.564C107.32 291.245 105.847 295.009 106.502 304.093L106.911 309.985L103.883 306.548C97.6639 299.592 93.4086 288.708 91.9356 276.187C91.6083 273.405 91.1173 271.114 90.7081 271.114C90.3808 271.114 88.4168 272.914 86.3709 275.124Z" />
       </svg>
+      </div>
       <h4 class="ltitle">Adventures</h4>
     </div>
     <nav>
@@ -90,10 +96,10 @@
     <section>
       <article class="slider">
         <div class="conteneur-slider">
-          <img src="/images/tatooine1.png" class="img_slider active" alt="">
-          <img src="/images/tatooine2.png" class="img_slider" alt="">
-          <img src="/images/tatooine3.png" class="img_slider" alt="">
-          <img src="/images/tatooine4.png" class="img_slider" alt="">
+          <img src="images/tatooine1.png" class="img_slider active" alt="">
+          <img src="images/tatooine2.png" class="img_slider" alt="">
+          <img src="images/tatooine3.png" class="img_slider" alt="">
+          <img src="images/tatooine4.png" class="img_slider" alt="">
         </div>
 
       </article>
@@ -101,7 +107,7 @@
     <section>
       <div class="conteneur-prix">
         <div class="prix">
-          <p>dés <span>2490</span><img src="/images/l1-orange.svg" height="20px" alt=""> /pers</p>
+          <p>dés <span>2490</span><img src="images/l1-orange.svg" height="20px" alt=""> /pers</p>
           <p>Navette + Transferts + Cantina + Tout inclus</p>
         </div>
         <div class="bouton-prix">
@@ -112,11 +118,11 @@
         <div class="info_rapide">
           <div class="titre-planet">
             <h3>Tatooine</h3>
-            <img src="/images/Tatoooine.webp" height="150px">
+            <img src="images/Tatoooine.webp" height="150px">
           </div>
           <div class="info-prix">
             <div class="prix">
-              <p>dés <span>2490</span><img src="/images/l1-orange.svg" height="20px" alt=""> /pers</p>
+              <p>dés <span>2490</span><img src="images/l1-orange.svg" height="20px" alt=""> /pers</p>
               <p>Navette + Transferts + Cantina + Tout inclus</p>
             </div>
             <div class="bouton-prix">
@@ -167,8 +173,8 @@
           </p>
         </div>
         <div class="imagegif">
-          <img src="/images/Tatooinegif1.png">
-          <img src="/images/Tatooinegif2.png">
+          <img src="images/Tatooinegif1.png">
+          <img src="images/Tatooinegif2.png">
         </div>
       </article>
     </section>
@@ -192,7 +198,7 @@
           <button>Rechercher</button>
         </div>
         <div class="conteneur-faucon">
-          <img class="faucon" src="/images/pngaaa.com-376043.png" alt="" height="100px">
+          <img class="faucon" src="images/pngaaa.com-376043.png" alt="" height="100px">
         </div>
       </article>
       <div class="conteneur-tableau" id="tableau">
@@ -203,95 +209,95 @@
             </tr>
           </thead>
           <tr>
-            <td>Satunda </br>3 Telona<img src="/images/fleche-droite.png"></td>
+            <td>Satunda </br>3 Telona<img src="images/fleche-droite.png"></td>
             <td>Satunda </br>8 Telona</td>
             <td>6J/5N</td>
             <td>-50%</td>
-            <td id="Red">1245<img src="/images/l1-orange.svg" height="15px"></td>
+            <td id="Red">1245<img src="images/l1-orange.svg" height="15px"></td>
           </tr>
           <tr>
-            <td>Satunda </br>8 Telona<img src="/images/fleche-droite.png"></td>
+            <td>Satunda </br>8 Telona<img src="images/fleche-droite.png"></td>
             <td>Satunda </br>13 Telona</td>
             <td>6J/5N</td>
             <td>-50%</td>
-            <td id="Red">1245<img src="/images/l1-orange.svg" height="15px"></td>
+            <td id="Red">1245<img src="images/l1-orange.svg" height="15px"></td>
           </tr>
           <tr>
-            <td>Datunda </br>9 Telona<img src="/images/fleche-droite.png"></td>
+            <td>Datunda </br>9 Telona<img src="images/fleche-droite.png"></td>
             <td>Datunda </br>14 Telona</td>
             <td>6J/5N</td>
             <td>-50%</td>
-            <td id="Red">1245<img src="/images/l1-orange.svg" height="15px"></td>
+            <td id="Red">1245<img src="images/l1-orange.svg" height="15px"></td>
           </tr>
           <tr>
-            <td>Katunda </br>17 Telona<img src="/images/fleche-droite.png"></td>
+            <td>Katunda </br>17 Telona<img src="images/fleche-droite.png"></td>
             <td>Katunda </br>22 Telona</td>
             <td>6J/5N</td>
             <td></td>
-            <td>2490<img src="/images/r1.svg" height="15px"></td>
+            <td>2490<img src="images/r1.svg" height="15px"></td>
           </tr>
           <tr>
-            <td>Satunda </br>18 Telona<img src="/images/fleche-droite.png"></td>
+            <td>Satunda </br>18 Telona<img src="images/fleche-droite.png"></td>
             <td>Satunda </br>23 Telona</td>
             <td>6J/5N</td>
             <td></td>
-            <td>2490<img src="/images/r1.svg" height="15px"></td>
+            <td>2490<img src="images/r1.svg" height="15px"></td>
           </tr>
           <tr>
-            <td>Datunda </br>19 Telona<img src="/images/fleche-droite.png"></td>
+            <td>Datunda </br>19 Telona<img src="images/fleche-droite.png"></td>
             <td>Datunda </br>24 Telona</td>
             <td>6J/5N</td>
             <td></td>
-            <td>2490<img src="/images/r1.svg" height="15px"></td>
+            <td>2490<img src="images/r1.svg" height="15px"></td>
           </tr>
           <tr>
-            <td>Natunda </br>20 Telona<img src="/images/fleche-droite.png"></td>
+            <td>Natunda </br>20 Telona<img src="images/fleche-droite.png"></td>
             <td>Natunda </br>25 Telona</td>
             <td>6J/5N</td>
             <td></td>
-            <td>2490<img src="/images/r1.svg" height="15px"></td>
+            <td>2490<img src="images/r1.svg" height="15px"></td>
           </tr>
           <tr>
-            <td>Atunda </br>21 Telona<img src="/images/fleche-droite.png"></td>
+            <td>Atunda </br>21 Telona<img src="images/fleche-droite.png"></td>
             <td>Atunda </br>26 Telona</td>
             <td>6J/5N</td>
             <td></td>
-            <td>2490<img src="/images/r1.svg" height="15px"></td>
+            <td>2490<img src="images/r1.svg" height="15px"></td>
           </tr>
           <tr>
-            <td>Katunda </br>22 Telona<img src="/images/fleche-droite.png"></td>
+            <td>Katunda </br>22 Telona<img src="images/fleche-droite.png"></td>
             <td>Katunda </br>27 Telona</td>
             <td>6J/5N</td>
             <td></td>
-            <td>2490<img src="/images/r1.svg" height="15px"></td>
+            <td>2490<img src="images/r1.svg" height="15px"></td>
           </tr>
           <tr>
-            <td>Katunda </br>27 Telona<img src="/images/fleche-droite.png"></td>
+            <td>Katunda </br>27 Telona<img src="images/fleche-droite.png"></td>
             <td>Katunda </br>32 Telona</td>
             <td>6J/5N</td>
             <td></td>
-            <td>2490<img src="/images/r1.svg" height="15px"></td>
+            <td>2490<img src="images/r1.svg" height="15px"></td>
           </tr>
           <tr>
-            <td>Satunda </br>28 Telona<img src="/images/fleche-droite.png"></td>
+            <td>Satunda </br>28 Telona<img src="images/fleche-droite.png"></td>
             <td>Satunda </br>33 Telona</td>
             <td>6J/5N</td>
             <td></td>
-            <td>2490<img src="/images/r1.svg" height="15px"></td>
+            <td>2490<img src="images/r1.svg" height="15px"></td>
           </tr>
           <tr>
-            <td>Datunda </br>29 Telona<img src="/images/fleche-droite.png"></td>
+            <td>Datunda </br>29 Telona<img src="images/fleche-droite.png"></td>
             <td>Datunda </br>34 Telona</td>
             <td>6J/5N</td>
             <td></td>
-            <td>2490<img src="/images/r1.svg" height="15px"></td>
+            <td>2490<img src="images/r1.svg" height="15px"></td>
           </tr>
           <tr>
-            <td>Natunda </br>30 Telona<img src="/images/fleche-droite.png"></td>
+            <td>Natunda </br>30 Telona<img src="images/fleche-droite.png"></td>
             <td>Natunda </br>35 Telona</td>
             <td>6J/5N</td>
             <td></td>
-            <td>2490<img src="/images/r1.svg" height="15px"></td>
+            <td>2490<img src="images/r1.svg" height="15px"></td>
           </tr>
         </table>
       </div>
@@ -330,7 +336,7 @@
               </div>
               <div class="prix-calendar">
                 <h6 id="Red">1245</h6>
-                <img src="/images/l1-orange.svg" height="20px" alt="">
+                <img src="images/l1-orange.svg" height="20px" alt="">
               </div>
               <p class="calendar-hover">Tout compris 6J/5N</p>
             </div>
@@ -355,7 +361,7 @@
               </div>
               <div class="prix-calendar">
                 <h6 id="Red">1245</h6>
-                <img src="/images/l1-orange.svg" height="20px" alt="">
+                <img src="images/l1-orange.svg" height="20px" alt="">
               </div>
               <p class="calendar-hover">Tout compris 6J/5N</p>
             </div>
@@ -366,7 +372,7 @@
               </div>
               <div class="prix-calendar">
                 <h6 id="Red">1245</h6>
-                <img src="/images/l1-orange.svg" height="20px" alt="">
+                <img src="images/l1-orange.svg" height="20px" alt="">
               </div>
               <p class="calendar-hover">Tout compris 6J/5N</p>
             </div>
@@ -399,7 +405,7 @@
               <p>17</p>
               <div class="prix-calendar">
                 <h6>2490</h6>
-                <img src="/images/r1.svg" height="20px" alt="">
+                <img src="images/r1.svg" height="20px" alt="">
               </div>
               <p class="calendar-hover">Tout compris 6J/5N</p>
             </div>
@@ -407,7 +413,7 @@
               <p>18</p>
               <div class="prix-calendar">
                 <h6>2490</h6>
-                <img src="/images/r1.svg" height="20px" alt="">
+                <img src="images/r1.svg" height="20px" alt="">
               </div>
               <p class="calendar-hover">Tout compris 6J/5N</p>
             </div>
@@ -415,7 +421,7 @@
               <p>19</p>
               <div class="prix-calendar">
                 <h6>2490</h6>
-                <img src="/images/r1.svg" height="20px" alt="">
+                <img src="images/r1.svg" height="20px" alt="">
               </div>
               <p class="calendar-hover">Tout compris 6J/5N</p>
             </div>
@@ -423,7 +429,7 @@
               <p>20</p>
               <div class="prix-calendar">
                 <h6>2490</h6>
-                <img src="/images/r1.svg" height="20px" alt="">
+                <img src="images/r1.svg" height="20px" alt="">
               </div>
               <p class="calendar-hover">Tout compris 6J/5N</p>
             </div>
@@ -433,7 +439,7 @@
               <p>21</p>
               <div class="prix-calendar">
                 <h6>2490</h6>
-                <img src="/images/r1.svg" height="20px" alt="">
+                <img src="images/r1.svg" height="20px" alt="">
               </div>
               <p class="calendar-hover">Tout compris 6J/5N</p>
             </div>
@@ -441,7 +447,7 @@
               <p>22</p>
               <div class="prix-calendar">
                 <h6>2490</h6>
-                <img src="/images/r1.svg" height="20px" alt="">
+                <img src="images/r1.svg" height="20px" alt="">
               </div>
               <p class="calendar-hover">Tout compris 6J/5N</p>
             </div>
@@ -463,7 +469,7 @@
               <p>27</p>
               <div class="prix-calendar">
                 <h6>2490</h6>
-                <img src="/images/r1.svg" height="20px" alt="">
+                <img src="images/r1.svg" height="20px" alt="">
               </div>
               <p class="calendar-hover">Tout compris 6J/5N</p>
             </div>
@@ -471,7 +477,7 @@
               <p>28</p>
               <div class="prix-calendar">
                 <h6>2490</h6>
-                <img src="/images/r1.svg" height="20px" alt="">
+                <img src="images/r1.svg" height="20px" alt="">
               </div>
               <p class="calendar-hover">Tout compris 6J/5N</p>
             </div>
@@ -479,7 +485,7 @@
               <p>29</p>
               <div class="prix-calendar">
                 <h6>2490</h6>
-                <img src="/images/r1.svg" height="20px" alt="">
+                <img src="images/r1.svg" height="20px" alt="">
               </div>
               <p class="calendar-hover">Tout compris 6J/5N</p>
             </div>
@@ -487,7 +493,7 @@
               <p>30</p>
               <div class="prix-calendar">
                 <h6>2490</h6>
-                <img src="/images/r1.svg" height="20px" alt="">
+                <img src="images/r1.svg" height="20px" alt="">
               </div>
               <p class="calendar-hover">Tout compris 6J/5N</p>
             </div>
@@ -736,7 +742,7 @@
               <input class="bouton" type="submit" value="Envoyer">
             </div>
           </form>
-          <div class="contenue-pub"><img src="/images/boontapub.png">
+          <div class="contenue-pub"><img src="images/boontapub.png">
           </div>
         </div>
       </div>
@@ -748,6 +754,10 @@
     <div class="c1">
       <div class="logo-footer">
         <h4>Wookiees</h4>
+        <div onmouseover="playAudio()">
+          <audio id="audioPlayer">
+            <source src="video/Sound_Effects_Chewbacca.mp3" type="audio/mpeg">
+          </audio>
         <svg class="head-logo-footer" width="313" height="401" viewBox="0 0 313 401" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path class="logo"
@@ -785,6 +795,7 @@
           <path class="logo"
             d="M86.3709 275.124C78.5968 283.389 75.8144 289.526 75.8963 298.282C75.8963 305.32 78.5149 310.312 86.3709 318.332C97.6639 329.87 101.674 339.772 101.183 355.075L100.937 364.322L103.556 361.785C109.53 355.975 113.376 343.536 112.476 332.898L111.985 327.17L113.949 330.361C115.094 332.161 116.977 336.744 118.286 340.59C120.414 347.055 120.577 348.61 120.577 360.312C120.577 374.388 119.432 380.116 114.031 393.7L111.248 400.82L115.749 395.91C121.232 390.018 128.27 379.625 131.216 373.242C133.916 367.268 135.88 357.939 135.225 353.602L134.816 350.083L136.453 351.965C139.808 355.811 141.69 362.604 141.772 371.442C141.772 376.024 142.099 379.625 142.427 379.461C143.736 378.643 147.991 366.532 148.892 361.212C151.265 346.892 144.391 331.998 130.479 321.441C120.823 314.158 112.967 304.829 109.53 296.564C107.32 291.245 105.847 295.009 106.502 304.093L106.911 309.985L103.883 306.548C97.6639 299.592 93.4086 288.708 91.9356 276.187C91.6083 273.405 91.1173 271.114 90.7081 271.114C90.3808 271.114 88.4168 272.914 86.3709 275.124Z" />
         </svg>
+        </div>
         <h4>Adventures</h4>
       </div>
       <div class="ft-ct2">
@@ -828,13 +839,13 @@
         </div>
       </div>
     <div class="reseau-footer">
-      <a><img src="/images/icon-twitter-100px.png" alt="icon twitter"></a>
-      <a><img src="/images/icon-facebook-100px.png" alt="icon facebook"></a>
-      <a><img src="/images/icon-instagram-100px.png" alt="icon instagram"></a>
+      <a><img src="images/icon-twitter-100px.png" alt="icon twitter"></a>
+      <a><img src="images/icon-facebook-100px.png" alt="icon facebook"></a>
+      <a><img src="images/icon-instagram-100px.png" alt="icon instagram"></a>
     </div>
   </footer>
-  <script src="/JS/app.js"></script>
-  <script src="/JS/header-script.js"></script>
+  <script src="JS/app.js"></script>
+  <script src="JS/header-script.js"></script>
 </body>
 
 </html>
