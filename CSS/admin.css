@@ -6,9 +6,8 @@ body {
 }
 
 main {
-    height: 100vh;
     background-color: hsla(0, 0%, 100%, 0);
-    padding: 25%;
+    padding: 100px;
 }
 
 .admin-panel {
@@ -56,9 +55,20 @@ th {
     padding-bottom: 15px;
 }
 
+td {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+}
 .offer-line:hover {
     color: #FE5B02;
     cursor: pointer;
+}
+
+.offer-line:hover svg {
+    fill: #FE5B02;
 }
 
 .center {
@@ -73,15 +83,32 @@ th {
     padding-left: 20px;
 }
 
-.td-icon img{
+.td-icon svg{
     display: block;
     margin-top: auto;
     margin-bottom: auto;
+    fill: #000000;
+    width: 19px;
+    height: 19px;
 }
 
 .admin-ctrl-cont {
     text-align: center;
     padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.adm-arrow {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.adm-arrow:hover {
+    scale: 1.2;
 }
 
 .admin-create-btn {
@@ -95,4 +122,7 @@ th {
     color: #FFFFFF;
     background-color: #FE5B02;
     border: none;
+    transition: 200ms;
 }
+
+
