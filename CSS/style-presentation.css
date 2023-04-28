@@ -175,9 +175,9 @@ img {
 .wrapper {
     display: flex;
     height: 100%;
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
-    perspective: 450px;
+    perspective: 600px;
     animation-delay: 10s;
 }
 
@@ -195,7 +195,7 @@ img {
 }
 
 @keyframes scroll {
-    from { top: 600px; transform: translateZ(0) rotateX(20deg);
+    from { top: 0px; transform: translateZ(0) rotateX(20deg);
     opacity: 1;
     
     }
@@ -203,4 +203,10 @@ img {
         transform: translateZ(-2500px) rotateX(21deg);
         
     }
+}
+.navette-1{
+
+}
+.navette-2{
+
 }
