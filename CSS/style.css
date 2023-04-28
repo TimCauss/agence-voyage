@@ -140,10 +140,6 @@ nav svg {
 }
 
 
-/* On aligne les logo au centre */
-.logo-title :first-child {
-    margin-left: 25px;
-}
 
 .logo-footer :first-child {
     margin-left: -5px;
@@ -518,6 +514,10 @@ footer {
 .logo-footer {
     display: flex;
     align-items: center;
+}
+
+.logo-footer:first-child {
+    margin-left: 20px;
 }
 
 .head-logo-footer {
@@ -903,6 +903,7 @@ footer {
         display: flex;
     }
 
+
     .form_container1 {
         width: 50%;
     }
@@ -1062,6 +1063,3 @@ footer {
         padding: 0 150px;
     }
 }
-
-
-
