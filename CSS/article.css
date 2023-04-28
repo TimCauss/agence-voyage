@@ -33,20 +33,20 @@
 }
 
 .art1 {
-    background-image: url(/images/article1-landscape-header.png);
+    background-image: url(../images/article1-landscape-header.png);
 }
 
 .art2 {
-    background-image: url(/images/article2-landscape-header.png);
+    background-image: url(../images/article2-landscape-header.png);
     background-position-y: 20%;
 }
 
 .art3 {
-    background-image: url(/images/article3-landscape-header.png);
+    background-image: url(../images/article3-landscape-header.png);
 }
 
 .art4 {
-    background-image: url(/images/article4-landscape-header.png);
+    background-image: url(../images/article4-landscape-header.png);
 }
 
 .guide-header {
