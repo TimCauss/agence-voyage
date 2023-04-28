@@ -156,7 +156,7 @@
 
 .slide--1__darkbg {
   left: 0%;
-  background: url("/images/Hero-Landscape-FauconMil-L.png") center center no-repeat;
+  background: url("../images/Hero-Landscape-FauconMil-L.png") center center no-repeat;
   background-size: cover;
   background-position: 0px center, 0px center;
   -webkit-transform: translate3d(0, 0, 0);
@@ -175,7 +175,7 @@
 }
 
 .slide--1__letter {
-  background: url("/images/Hero-Landscape-FauconMil-L.png") center center no-repeat;
+  background: url("../images/Hero-Landscape-FauconMil-L.png") center center no-repeat;
   background-position: 0px center, 0px center;
   background-size: cover;
 }
@@ -184,7 +184,7 @@
 
 .slide--2__darkbg {
   left: -50%;
-  background: url("/images/Hero-Landscape-tatooine-L.png") center center no-repeat;
+  background: url("../images/Hero-Landscape-tatooine-L.png") center center no-repeat;
   background-size: cover;
   background-position: 0px center, 0px center;
   -webkit-transform: translate3d(0, 0, 0);
@@ -203,14 +203,14 @@
 }
 
 .slide--2__letter {
-  background: url("/images/Hero-Landscape-tatooine-L.png") center center no-repeat;
+  background: url("../images/Hero-Landscape-tatooine-L.png") center center no-repeat;
   background-position: 0px center, 0px center;
   background-size: cover;
 }
 
 .slide--3__darkbg {
   left: -100%;
-  background: url("/images/hero-landscape-naboo-L.jpg") center center no-repeat;
+  background: url("../images/hero-landscape-naboo-L.jpg") center center no-repeat;
   background-size: cover;
   background-position: 0px center, 0px center;
   -webkit-transform: translate3d(0, 0, 0);
@@ -229,14 +229,14 @@
 }
 
 .slide--3__letter {
-  background: url("/images/hero-landscape-naboo-L.jpg") center center no-repeat;
+  background: url("../images/hero-landscape-naboo-L.jpg") center center no-repeat;
   background-position: 0px center, 0px center;
   background-size: cover;
 }
 
 .slide--4__darkbg {
   left: -150%;
-  background: url("/images/Hero-Landscape-Kashyyyk-L-2.jpg") center center no-repeat;
+  background: url("../images/Hero-Landscape-Kashyyyk-L-2.jpg") center center no-repeat;
   background-size: cover;
   background-position: 0px center, 0px center;
   -webkit-transform: translate3d(0, 0, 0);
@@ -255,14 +255,14 @@
 }
 
 .slide--4__letter {
-  background: url("/images/Hero-Landscape-Kashyyyk-L-2.jpg") center center no-repeat;
+  background: url("../images/Hero-Landscape-Kashyyyk-L-2.jpg") center center no-repeat;
   background-position: 0px center, 0px center;
   background-size: cover;
 }
 
 .slide--5__darkbg {
   left: -200%;
-  background: url("/images/Landcsape-death-star.jpg") center center no-repeat;
+  background: url("../images/Landcsape-death-star.jpg") center center no-repeat;
   background-size: cover;
   background-position: 0px center, 0px center;
   -webkit-transform: translate3d(0, 0, 0);
@@ -281,7 +281,7 @@
 }
 
 .slide--5__letter {
-  background: url("/images/Landcsape-death-star.jpg") center center no-repeat;
+  background: url("../images/Landcsape-death-star.jpg") center center no-repeat;
   background-position: 0px center, 0px center;
   background-size: cover;
 }
