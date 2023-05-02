@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+.star-titre{
+    z-index: 5;
+}
+/* Animation properties */
+.titre1 {
+    opacity: 0;
+    animation: star 10s ease-out ;
+}
+
+.titre2 {
+    opacity: 0;
+    animation: wars 10s ease-out ;
+}
+
+.titre-logo {
+    opacity: 0;
+    animation: rotation 10s linear ;
+}
+
+/* Keyframes */
+@keyframes star {
+    0% {
+        opacity: 0;
+        transform: scale(1.5) translateY(-0.75em);
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    89% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateZ(-1000em);
+    }
+}
+
+@keyframes wars {
+    0% {
+        opacity: 0;
+        transform: scale(1.5) translateY(0.5em);
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateZ(-1000em);
+    }
+}
+
+@keyframes rotation {
+    0% {
+        opacity: 1;
+      transform: perspective(100px) rotate3d(1,90,1,90deg);
+    }
+    50%{opacity: 1;
+      transform: perspective(100px) rotate3d(1,1,1,0deg);
+    }
+    90% {opacity: 1;
+       scale: 1; 
+      transform: perspective(100px) rotate3d(1,1,1,0deg);
+    }
+    100%{
+        scale:0;
+        transform: translateZ(-1000em);
+    }
+  }
+
+
+@keyframes move-byline {
+    0% {
+        transform: translateZ(5em);
+    }
+
+    100% {
+        transform: translateZ(0);
+    }
+}
+
+/* Make the 3D work on the container */
+.star-titre {
+    perspective: 800px;
+    transform-style: preserve3d;
+}
+
+/* General styles and layout */
+body {
+    background: #000 url(//cssanimation.rocks/demo/starwars/images/bg.jpg);
+    margin: 0;
+    overflow: hidden;
+}
+
+.star-titre {
+    height: 17em;
+
+    position: relative;
+
+    transform: translate(120%, 50%);
+    width: 34em;
+}
+
+img {
+    width: 100%;
+}
+
+.titre1,
+.titre2,
+.titre-logo {
+    position: absolute;
+    z-index: 9;
+}
+
+.titre1 {
+    top: -0.5em;
+}
+
+.titre2 {
+    bottom: -0.5em;
+}
+
+.titre-logo {
+    color: #fff;
+    top: 29%;
+}
+
+/*** Media queries for adjusting to different screen sizes ***/
+
+@media only screen and (max-width: 600px) {
+    .star-titre {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .star-titre {
+        font-size: 7px;
+    }
+}
+
+/***** effet scroll star wars *****/
+.star-scroll {
+    overflow: hidden;
+    font-family: sans-serif;
+    margin: 50% 0 0 0;
+    margin-top: 0;
+    position: relative;
+    animation-delay: 10s;
+}
+.star-scroll::after{
+    content: '';
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(180deg, rgba(20,20,20,1) 40%, rgba(20,20,20,0) 100%);
+    animation-delay: 10s;
+}
+.wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    perspective: 600px;
+    animation-delay: 10s;
+}
+
+.scroll-text {
+    color: rgb(255, 217, 0);
+    font-size: 3vw;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-align: justify;
+    position: relative;
+    animation: scroll 80s linear forwards;
+    transform: translateZ(-2500px) rotateX('20deg');
+    animation-delay: 9s;
+    opacity: 0;
+}
+
+@keyframes scroll {
+    from { top: 0px; transform: translateZ(0) rotateX(20deg);
+    opacity: 1;
+    
+    }
+    to { top: -7500px;
+        transform: translateZ(-2500px) rotateX(21deg);
+        
+    }
+}
+.navette-1{
+
+}
+.navette-2{
+
+}

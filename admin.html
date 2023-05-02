@@ -90,6 +90,59 @@
     </header>
 
 
+        <!-- ! Début modal -->
+    <div class="modal-container">
+        <div class="overlay modal-trigger"></div>
+        <div class="modal">
+            <button class="close-modal modal-trigger">X</button>
+            <h1>Ajouter une offre</h1>
+            <div class="add-ofr-container">
+                <div class="input-container">
+                    <input type="text" placeholder="Nom">
+                </div>
+                <div class="input-container">
+                    <input type="text" placeholder="Durée (en jours)">
+                </div>
+                <div class="input-container">
+                    <input type="text" placeholder="Prix">
+                </div>
+                <div class="input-container">
+                    <input type="text" placeholder="Type">
+                </div>
+                <div class="textarea-container">
+                    <textarea name="" placeholder="Description de l'offre" cols="30" rows="10"></textarea>
+                </div>
+                <div class="btn-ajouter-ctn">
+                    <button class="admin-create-btn btn-ajouter-offre">Ajouter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-container2">
+        <div class="overlay modal-trigger2"></div>
+        <div class="modal">
+            <button class="close-modal modal-trigger2">X</button>
+            <h1>Ajouter un article</h1>
+            <div class="add-ofr-container">
+                <div class="input-container">
+                    <input type="text" placeholder="Nom">
+                </div>
+                <div class="input-container">
+                    <input type="text" placeholder="Date">
+                </div>
+                <div class="input-container">
+                    <input type="text" placeholder="Type">
+                </div>
+                <div class="textarea-container">
+                    <textarea name="" placeholder="Description de l'offre" cols="30" rows="10"></textarea>
+                </div>
+                <div class="btn-ajouter-ctn">
+                    <button class="admin-create-btn btn-ajouter-offre">Ajouter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- ! Fin modal -->
 
     <main>
         <section class="admin-panel">
@@ -202,7 +255,7 @@
                 <p class="line">&emsp;&emsp;&emsp;</p>
                 <div class="admin-ctrl-cont">
                     <img class="adm-arrow" src="/images/admin-Arrow-Left.png" alt="">
-                    <button class="admin-create-btn">Créer</button>
+                    <button class="admin-create-btn modal-btn modal-trigger">Créer</button>
                     <img class="adm-arrow" src="/images/admin-Arrow-Right.png" alt="">
                 </div>
             </div>
@@ -282,9 +335,9 @@
                 </table>
                 <p class="line">&emsp;&emsp;&emsp;</p>
                 <div class="admin-ctrl-cont">
-                    <img class="adm-arrow" src="/images/admin-Arrow-Left.png" alt="">
+                    <img class="adm-arrow" src="images/admin-Arrow-Left.png" alt="">
                     <button class="admin-create-btn">Créer</button>
-                    <img class="adm-arrow" src="/images/admin-Arrow-Right.png" alt="">
+                    <img class="adm-arrow" src="images/admin-Arrow-Right.png" alt="">
                 </div>
             </div>
         </section>
@@ -383,7 +436,7 @@
     </footer>
 
 
-    <script src="/JS/header-script.js"></script>
+    <script src="JS/header-script.js"></script>
 </body>
 
 </html>

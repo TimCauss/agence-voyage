@@ -76,10 +76,11 @@ td {
 .col-name {
     text-align: left;
     width: 50%;
-    overflow:hidden;
-    text-overflow:ellipsis;
+    overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap;
 }
+
 .offer-line:hover {
     color: #FE5B02;
     background-color: #8581813b;
@@ -93,15 +94,15 @@ td {
 .center {
     text-align: center;
     min-width: 60px;
-    overflow:hidden;
-    text-overflow:ellipsis;
+    overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap;
 }
 
 .price {
     text-align: center;
-    overflow:hidden;
-    text-overflow:ellipsis;
+    overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap;
 }
 
@@ -111,7 +112,7 @@ td {
     text-align: right;
 }
 
-.td-icon svg{
+.td-icon svg {
     margin-top: auto;
     margin-bottom: auto;
     fill: #000000;
@@ -126,6 +127,7 @@ td {
     justify-content: space-between;
     align-items: center;
 }
+
 table {
     width: 100%;
 }
@@ -152,7 +154,139 @@ table {
     color: #FFFFFF;
     background-color: #FE5B02;
     border: none;
-    transition: 200ms;
+    transition: scale 200ms;
+}
+
+/*! Début style Modal */
+
+.modal-container {
+    /* display: none; */
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    transition: visibility 0.4s;
+}
+
+.modal-container2 {
+    /* display: none; */
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    transition: visibility 0.4s;
+}
+
+.modal-container.active {
+    /* display: block; */
+    transform: visibility 0s;
+    visibility: visible;
+}
+
+.modal-container2.active {
+    /* display: block; */
+    transform: visibility 0s;
+    visibility: visible;
+}
+
+.overlay {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333333d3;
+    transition: opacity 0.4s 0.2s ease-out;
+}
+
+.modal-container.active .overlay {
+    opacity: 1;
+    transition: opacity 0.4s ease-out;
+}
+
+.modal-container2.active .overlay {
+    opacity: 1;
+    transition: opacity 0.4s ease-out;
+}
+
+.modal {
+    opacity: 0;
+    width: 95%;
+    max-width: 500px;
+    min-width: 300px;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 150px));
+    transition: opacity 0.4s ease-out,
+    transform 0.4s ease-out;
+}
+
+.modal-container.active .modal {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.4s 0.2s ease-out,
+    transform 0.4s 0.2s ease-out;
+}
+
+.modal-container2.active .modal {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.4s 0.2s ease-out,
+    transform 0.4s 0.2s ease-out;
+}
+
+.close-modal {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #FE5B02;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.add-ofr-container {
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.input-container {
+    width: 48%;
+}
+
+.input-container input {
+    height: 25px;
+}
+
+.textarea-container {
+    width: 100%;
+}
+
+.textarea-container textarea {
+    width: 100%;
+    resize: both;
+}
+
+/*! Fin Style Modal */
+
+@media screen and (min-width: 768px) {
+    .logo-title {
+        margin-right: 0px;
+    }
 }
 
 
@@ -166,7 +300,8 @@ table {
 
 /**MEDIA QUERY Ipad Pro 12.9 1200*1366 */
 @media screen and (min-width: 1200px) {
-   .admin-offres {
-    width: 1000px;
-   }
+    .admin-offres {
+        width: 1000px;
+    }
 }
+

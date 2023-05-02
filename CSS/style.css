@@ -90,7 +90,7 @@ nav ul {
 nav ul a {
     text-decoration: none;
     color: white;
-    cursor: default;
+    cursor: pointer;
 }
 
 nav ul a:hover {
@@ -140,10 +140,6 @@ nav svg {
 }
 
 
-/* On aligne les logo au centre */
-.logo-title :first-child {
-    margin-left: 25px;
-}
 
 .logo-footer :first-child {
     margin-left: -5px;
@@ -520,6 +516,10 @@ footer {
     align-items: center;
 }
 
+.logo-footer:first-child {
+    margin-left: 20px;
+}
+
 .head-logo-footer {
     transition: transform 200ms;
 }
@@ -666,7 +666,7 @@ footer {
     overflow: hidden;
     flex-direction: row;
     width: 100%;
-    background-color: #387397;
+    background-color: #195a8370;
 }
 
 .form_container1 {
@@ -903,6 +903,10 @@ footer {
         display: flex;
     }
 
+    .logo-title :first-child {
+        margin-left: 25px;
+    }
+
     .form_container1 {
         width: 50%;
     }
@@ -1062,6 +1066,3 @@ footer {
         padding: 0 150px;
     }
 }
-
-
-
