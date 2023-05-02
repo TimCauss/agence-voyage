@@ -27,7 +27,7 @@ body{
     padding-bottom: 5%;
     padding-top: 3%;
     background: #FFFFFF;
-    opacity: 0.6;
+    opacity: 0.7;
     margin-top: 10%;
 }
 
@@ -52,7 +52,7 @@ th, td {
     border-bottom: 1px solid #ddd;
 }
 
-.resa:hover, .resa:hover a, .resa:hover .credit {
+.resa:hover, .resa:hover a, .resa:hover .credit, .resa:hover .poubelle-reserv {
     background-color: black;
     color: #FFFFFF;
     fill: #ffffff
@@ -79,7 +79,11 @@ td:nth-child(5) {
 
     font-size: 2px;
 }
-.credit {
+
+.poubelle-reserv{
+    cursor: pointer;
+}
+.credit, .poubelle, .poubelle-reserv{
     fill: black;
     height: 15px;
     width: auto;
@@ -114,3 +118,20 @@ td:nth-child(5) {
     }
 }
 
+.bouton button {
+    font-size: 18px;
+    color: white;
+    background-color: #FE5B02;
+    height: 40px;
+    width: 200px;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 10px;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 200ms;
+    
+}
