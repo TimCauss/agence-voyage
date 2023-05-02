@@ -46,6 +46,11 @@ h1 {
     gap: 20px;
 }
 
+.asso-montant-choices img {
+    width: 12.02px;
+    height: 21.69px;
+}
+
 .asso-price {
     display: flex;
     flex-direction: row;
