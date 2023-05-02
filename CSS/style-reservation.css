@@ -73,10 +73,10 @@ td {
 }
 
 td:nth-child(5) {
-    text-align: right;
+    text-align: center;
 }
 .credit{
-
+    
     font-size: 2px;
 }
 
