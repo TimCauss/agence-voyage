@@ -45,9 +45,9 @@ h1 {
     padding-left: min(20px);
     padding-right: min(20px);
     padding-bottom: min(20px);
-    gap: min(1px);
+    gap: 10px;
     align-items: center;
-    
+
 }
 
 .asso-montant-choices img {
