@@ -5,14 +5,15 @@ body {
 main {
     height: 1080px;
     font-family: 'Open Sans', sans-serif;
-    background-image: url(../images/asso-background.png);
+    background-image: url(../images/asso-background_auto_x2.jpg);
     background-size: cover;
     width: 100%;
     background-position: 50%;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
+    padding-top: 200px;
 }
 
 .logo-title {
@@ -27,23 +28,27 @@ main {
     flex-direction: column;
     background: rgba(232, 226, 218, 0.6);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    min-width: 300px;
+    max-width: 25%;
 }
 
 h1 {
     background-color: #FE5B02;
     color: white;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .asso-montant-choices {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-around;
-    padding-top: max(50px);
-    padding-left: max(50px);
-    padding-right: max(50px);
-    padding-bottom: max(37px);
-    gap: 20px;
+    padding-top: min(15px);
+    padding-left: min(20px);
+    padding-right: min(20px);
+    padding-bottom: min(20px);
+    gap: min(1px);
 }
 
 .asso-montant-choices img {
@@ -54,19 +59,24 @@ h1 {
 .asso-price {
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    padding: 25px;
+    gap: 1px;
     background-color: white;
     border-radius: 5px;
-    padding: 18px 45px;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
     color: #4F4746;
+    justify-content: center;
+    align-items: center;
 }
 
 .asso-free-montant {
-    padding: 0px 50px 50px 50px;
+    padding-top: min(15px);
+    padding-left: min(20px);
+    padding-right: min(20px);
+    padding-bottom: min(20px);
     height: 50px;
     display: flex;
 }
@@ -77,9 +87,19 @@ h1 {
     border: none;
 }
 
-.asso-free-montant input:focus {
+input:focus {
     border: none;
     outline: none;
+}
+
+input {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #B7B7B7;
+    border-radius: 5px;
 }
 
 .asso-free-montant ::placeholder {
@@ -94,10 +114,70 @@ h1 {
     color: #B7B7B7;
 }
 
+
+.asso-input {
+    margin: 25px;
+}
+.asso-form-2col {
+    display: flex;
+    gap: 10px;
+}
+
+.asso-inputcol1 {
+    width: 40%;
+}
+
+.coordonnees p{
+    padding: 25px;
+}
+
 .asso-free-montant img {
     background: #CDCDCD;
     padding: 9px 15px;
     border-radius: 0px 5px 5px 0px;
+}
+
+figure{
+    display: flex;
+}
+
+figure img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.asso-form {
+    padding: 25px;
+}
+
+
+
+.asso-input-mail-ctn img {
+    width: 31px;
+    align-self: center;
+    padding: 5px;
+}
+.letter-ctn {
+    display: flex;
+    height: 45px;
+    background: #D9D9D9;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.coordonnees input {
+    width: 100%;
+    height: 45px;
+    border: none;
+}
+
+#assomail {
+    width: 90%;
+    border-radius: 0px 5px 5px 0px;
+}
+.asso-input-mail-ctn {
+    display: flex;
+    padding: 25px 25px;
+    margin-left: 0;
 }
 
 footer {
@@ -106,6 +186,13 @@ footer {
     width: 100%;
 }
 
+/**MEDIA QUERY iPad 530*xxx */
+.asso-montant-choices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
 /**MEDIA QUERY iPad 768*1024 */
 @media screen and (min-width: 768px) {
     .logo-title {
@@ -113,5 +200,12 @@ footer {
     }
     .logo-title :first-child {
         margin-left: 0px;
+    }
+
+    main {
+        flex-flow: row;
+        align-items: flex-start;
+        padding-top: 100px;
+        gap: 10px;
     }
 }
