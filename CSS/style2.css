@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -647,6 +649,7 @@ table td {
 .titre-com {
     text-align: center;
     font-size: 45px;
+    font-family: "Open Sans";
 }
 
 .user-avatar {
@@ -671,6 +674,7 @@ table td {
     color: black;
     margin-right: 10px;
     display: flex;
+    font-family: "Open Sans";
 
 }
 
@@ -693,11 +697,13 @@ table td {
     color: white;
     margin-top: 5px;
     margin-bottom: 10px;
+    font-family: "Open Sans";
 }
 
 .comment-date {
     font-size: 12px;
     color: #777;
+    font-family: "Open Sans";
 }
 
 .contenaire-vos-com {
@@ -736,6 +742,7 @@ table td {
 label {
     display: block;
     margin-bottom: 5px;
+    font-family: "Open Sans";
 }
 
 textarea,
