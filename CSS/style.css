@@ -501,6 +501,14 @@ footer {
     overflow: hidden;
 }
 
+footer a {
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: white;
+}
+
 .c1 {
     display: flex;
     flex-direction: column;
