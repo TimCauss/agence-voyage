@@ -63,21 +63,35 @@ h1 {
     padding: 25px;
     gap: 1px;
     width: 50%;
-    background-image: linear-gradient(to top, #ffffff 50%, #ffffff 50%);
     border-radius: 5px;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
+    background-color: #ffffff;
     color: #4F4746;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: 500ms;
+    transition: background-color linear 500ms;
 }
 
 .asso-price:hover {
-    background-image: linear-gradient(to top, #FE5B02 50%, #FE5B02 50%);
+    animation: bgf 0.2s ease-in both;
+}
+
+@keyframes bgf {
+    0% { background: linear-gradient(0deg, rgba(254,91,2,1) 0%, rgba(255,255,255,1) 0%); }
+    10% { background: linear-gradient(0deg, rgba(254,91,2,1) 5%, rgba(255,255,255,1) 10%); }
+    20% { background: linear-gradient(0deg, rgba(254,91,2,1) 10%, rgba(255,255,255,1) 20%);}
+    30% { background: linear-gradient(0deg, rgba(254,91,2,1) 15%, rgba(255,255,255,1) 30%);}
+    40% { background: linear-gradient(0deg, rgba(254,91,2,1) 20%, rgba(255,255,255,1) 40%);}
+    50% { background: linear-gradient(0deg, rgba(254,91,2,1) 25%, rgba(255,255,255,1) 50%);}
+    60% { background: linear-gradient(0deg, rgba(254,91,2,1) 30%, rgba(255,255,255,1) 60%);}
+    70% { background: linear-gradient(0deg, rgba(254,91,2,1) 50%, rgba(255,255,255,1) 70%);}
+    80% { background: linear-gradient(0deg, rgba(254,91,2,1) 60%, rgba(255,255,255,1) 80%);}
+    90% { background: linear-gradient(0deg, rgba(254,91,2,1) 80%, rgba(255,255,255,1) 90%);}
+    100% { background: linear-gradient(0deg, rgba(254,91,2,1) 100%, rgba(255,255,255,1) 100%);}
 }
 
 .asso-free-montant {
