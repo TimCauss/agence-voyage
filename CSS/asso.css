@@ -3,17 +3,15 @@ body {
 }
 
 main {
-    height: 1080px;
     font-family: 'Open Sans', sans-serif;
     background-image: url(../images/asso-background_auto_x2.jpg);
     background-size: cover;
-    width: 100%;
+    overflow: hidden;
     background-position: 50%;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    padding-top: 200px;
 }
 
 .logo-title {
@@ -28,7 +26,11 @@ main {
     flex-direction: column;
     background: rgba(232, 226, 218, 0.6);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    min-width: 300px;
+    width: 100%;
+}
+
+#mon-don {
+    margin-top: 100px;
 }
 
 h1 {
@@ -126,7 +128,9 @@ input {
 .asso-inputcol1 {
     width: 40%;
 }
-
+.coordonnees {
+    min-width: 300px;
+}
 .coordonnees p{
     padding: 25px;
 }
@@ -139,6 +143,8 @@ input {
 
 figure{
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 figure img {
@@ -171,13 +177,96 @@ figure img {
 }
 
 #assomail {
-    width: 90%;
+    width: 100%;
     border-radius: 0px 5px 5px 0px;
 }
 .asso-input-mail-ctn {
     display: flex;
     padding: 25px 25px;
     margin-left: 0;
+}
+
+.mode-paiement-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.mode-paiement {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #797979;
+    min-width: 180px;
+    width: 50%;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-bottom: #cdcdcd00 5px solid;
+    transition: 500ms;
+}
+
+.mode-paiement:hover {
+    color: #FE5B02;
+    border-bottom: #FE5B02 5px solid;
+}
+.mode-paiement:hover svg {
+    fill: #FE5B02;
+}
+
+.cb svg {
+    width: 85px;
+    height: 64px;
+    fill: #797979;
+    transition: 500ms;
+}
+
+.paypal svg {
+    width: 64px;
+    height: 64px;
+    fill: #797979;
+    transition: 500ms;
+}
+
+h2 {
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+display: flex;
+align-items: center;
+text-align: center;
+}
+
+.paiement-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.btn-v-ctn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-v-ctn button{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+    width: 90%;
+    text-align: center;
+    background-color: #FE5B02;
+    border: none;
+    margin-bottom: 25px;
 }
 
 footer {
@@ -199,7 +288,7 @@ footer {
     }
 }
 /**MEDIA QUERY iPad 768*1024 */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1140px) {
     .logo-title {
         margin-left: 0px;
     }
@@ -211,6 +300,14 @@ footer {
         flex-flow: row;
         align-items: flex-start;
         padding-top: 100px;
-        gap: 10px;
+        padding-right: 25px;
+        padding-left: 25px;
+        gap: 20px;
+    }
+    #mon-don {
+        margin-top: 0;
+    }
+    .asso-content {
+        margin-bottom: min(50px);
     }
 }
