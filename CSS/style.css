@@ -6,6 +6,10 @@
     /* outline: 1px solid; */
 }
 
+a{
+    text-decoration: none;
+}
+
 html {
     scroll-behavior: smooth !important;
 }
@@ -92,6 +96,8 @@ nav ul a {
     color: white;
     cursor: pointer;
 }
+
+
 
 nav ul a:hover {
     color: #FE5B02;
@@ -499,6 +505,15 @@ footer {
     color: aliceblue;
     fill: rgb(255, 255, 255);
     overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:visited {
+    color: white;
 }
 
 .c1 {
