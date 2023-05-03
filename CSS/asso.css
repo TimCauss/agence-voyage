@@ -63,7 +63,7 @@ h1 {
     padding: 25px;
     gap: 1px;
     width: 50%;
-    background-color: white;
+    background-image: linear-gradient(to top, #ffffff 50%, #ffffff 50%);
     border-radius: 5px;
     font-style: normal;
     font-weight: 700;
@@ -72,6 +72,12 @@ h1 {
     color: #4F4746;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.asso-price:hover {
+    background-image: linear-gradient(to top, #FE5B02 50%, #FE5B02 50%);
 }
 
 .asso-free-montant {
@@ -267,6 +273,7 @@ text-align: center;
     background-color: #FE5B02;
     border: none;
     margin-bottom: 25px;
+    cursor: pointer;
 }
 
 footer {
