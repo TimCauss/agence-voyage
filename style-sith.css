@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-image: url(/images/SITH.jpg);
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1{
+  font-family: 'Star Wars', sans-serif;
+  font-size: 48px;
+  color: red;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.typing-container{
+  
+}
+p{
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  color: red;
+  align-items: center;
+  text-align: left;
+
+}

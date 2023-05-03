@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-sith.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/star-wars" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Le plan du </br>Sith </h1>
+
+    <div id="typing-container"></div>
+    <script>
+        const outputDiv = document.getElementById('typing-container');
+
+        const txt = `1. Rassembler des partisans pour votre cause.<nl>
+                    2. Trouver un artefact ou un pouvoir important à rechercher, comme l'Étoile de la Mort ou le sabre laser légendaire d'un Jedi.<nl>
+                    3. Recruter des sbires ou des chasseurs de primes pour aider dans la recherche ou pour commettre des actes de violence en votre nom.<nl>
+                    4. Convaincre vos partisans que votre cause est juste et que vous êtes leur leader.<nl>
+                    5. Utiliser la Force pour manipuler les événements à votre avantage et s'assurer que les choses se passent comme vous le souhaitez.<nl>
+                    6. Trahir les alliés ou les subordonnés pour s'assurer que vous conservez le contrôle et le pouvoir absolu.<nl>
+                    7. Éliminer tous ceux qui s'opposent à votre cause.<nl>
+                    8. Faire preuve d'intelligence et de perspicacité pour anticiper les mouvements de vos ennemis et contrer leurs stratégies.<nl>
+                    9. Rassembler une armée impressionnante.<nl>
+                    10. Utiliser les technologies les plus avancées pour vaincre vos ennemis.<nl>
+                    11. Maintenir un pouvoir absolu sur votre empire en utilisant des méthodes brutales et tyranniques pour écraser toute opposition.<nl>
+                    12. Préparer une confrontation finale contre vos ennemis les plus redoutables, comme un duel avec un Jedi ou une bataille spatiale épique.`
+
+        const splitted = txt.split('<nl>')
+
+        splitted.forEach(function(){
+            const p = document.createElement('p');
+            outputDiv.appendChild(p);
+        });
+
+        const paras = outputDiv.querySelectorAll('p')
+
+        let i = 0;
+        let currentPara = 0;
+
+        const intervalId = setInterval(function () {
+            paras[currentPara].innerHTML += splitted[currentPara][i];
+            i++;
+
+            if(i === splitted[currentPara].length){
+                currentPara++;
+                i = 0;
+            }
+
+            if (currentPara === splitted.length) {
+                clearInterval(intervalId);
+            }
+        }, 50);
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
