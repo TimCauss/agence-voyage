@@ -1081,3 +1081,31 @@ footer a:visited {
         padding: 0 150px;
     }
 }
+
+
+.conteneur-card:nth-child(2){
+    transition-delay: 100ms;
+}
+.conteneur-card:nth-child(3){
+    transition-delay: 200ms;
+}
+.conteneur-card:nth-child(5){
+    transition-delay: 100ms;
+}
+.conteneur-card:nth-child(6){
+    transition-delay: 200ms;
+}
+
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0)
+}
