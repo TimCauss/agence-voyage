@@ -1096,7 +1096,7 @@ footer a:visited {
     transition-delay: 200ms;
 }
 
-
+@media screen and (min-width: 350px) {
 .hidden {
     opacity: 0;
     filter: blur(5px);
@@ -1108,4 +1108,5 @@ footer a:visited {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0)
+}
 }
