@@ -77,7 +77,7 @@ h1 {
 }
 
 .asso-price:hover {
-    animation: bgf 0.2s ease-in both;
+    animation: bgf 100ms ease-in both;
 }
 
 @keyframes bgf {
